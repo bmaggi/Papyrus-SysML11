@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+	<extension
+	      point="org.eclipse.gmf.runtime.emf.type.core.elementTypeBindings">
+		<clientContext
+	         id="org.eclipse.papyrus.sysml.architecture.SysML">
+	      <matcher
+	            class="org.eclipse.papyrus.sysml.architecture.internal.NoContextEnablementMatcher">
+	      </matcher>
+	   	</clientContext>
+		<binding context="org.eclipse.papyrus.sysml.architecture.SysML">
+			<!-- ElementType that deals with View deletion when their related model element is deleted -->
+			<elementType ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
+			<elementType ref="org.eclipse.gmf.runtime.diagram.core.advice.removeBookmarks"/>
+	        <!-- Check for attempts to edit read-only objects that cannot reasonably be made writeable. -->		
+	        <advice ref="org.eclipse.papyrus.infra.emf.readOnlyAdvice" />
+	        <!-- Delete markers attached to objects being deleted. -->
+		</binding>
+	</extension>
+
+	 <extension point="org.eclipse.papyrus.infra.architecture.models">
+	    <model path="model/sysml.architecture"/>
+	 </extension>
+ 
+	<extension
+	      point="org.eclipse.papyrus.infra.gmfdiag.common.diagramReconciler">
+	   <diagramReconciler
+	         diagramType="BlockDefinition"
+	         reconcilerClass="org.eclipse.papyrus.sysml.architecture.migration.SysMLDiagramReconciler_1_3_0"
+	         source="1.2.0"
+	         target="1.3.0">
+	   </diagramReconciler>
+	   <diagramReconciler
+	         diagramType="InternalBlock"
+	         reconcilerClass="org.eclipse.papyrus.sysml.architecture.migration.SysMLDiagramReconciler_1_3_0"
+	         source="1.2.0"
+	         target="1.3.0">
+	   </diagramReconciler>
+	   <diagramReconciler
+	         diagramType="Parametric"
+	         reconcilerClass="org.eclipse.papyrus.sysml.architecture.migration.SysMLDiagramReconciler_1_3_0"
+	         source="1.2.0"
+	         target="1.3.0">
+	   </diagramReconciler>
+	   <diagramReconciler
+	         diagramType="RequirementDiagram"
+	         reconcilerClass="org.eclipse.papyrus.sysml.architecture.migration.SysMLDiagramReconciler_1_3_0"
+	         source="1.2.0"
+	         target="1.3.0">
+	   </diagramReconciler>
+	</extension>
+
+	<extension
+	      point="org.eclipse.papyrus.infra.nattable.common.tableReconciler">
+	   <tableReconciler
+	         reconcilerClass="org.eclipse.papyrus.sysml.architecture.migration.SysMLTableReconciler_1_3_0"
+	         source="1.0.0"
+	         target="1.3.0">
+	   </tableReconciler>
+	</extension>
+
+</plugin>
+

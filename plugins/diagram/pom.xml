@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>org.eclipse.papyrus.sysml-diagram</artifactId>
+	<packaging>pom</packaging>
+	<parent>
+	    <groupId>org.eclipse.papyrus.sysml</groupId>
+	    <artifactId>org.eclipse.papyrus.sysml</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+    </parent>
+	<name>Papyrus SysSML Diagrams</name>
+	<description>The Papyrus implementations of the SysML 1.1 diagram editors.</description>
+
+	<modules>
+		<module>org.eclipse.papyrus.sysml.diagram.blockdefinition</module>
+		<module>org.eclipse.papyrus.sysml.diagram.common</module>
+		<module>org.eclipse.papyrus.sysml.diagram.css</module>
+		<module>org.eclipse.papyrus.sysml.diagram.internalblock</module>
+		<module>org.eclipse.papyrus.sysml.diagram.parametric</module>
+		<module>org.eclipse.papyrus.sysml.diagram.requirement</module>
+		<module>org.eclipse.papyrus.sysml.diagram.ui</module>
+	</modules>
+</project>

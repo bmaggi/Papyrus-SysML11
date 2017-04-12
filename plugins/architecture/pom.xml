@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>org.eclipse.papyrus.sysml-architecture</artifactId>
+	<packaging>pom</packaging>
+	<parent>
+	    <groupId>org.eclipse.papyrus.sysml</groupId>
+	    <artifactId>org.eclipse.papyrus.sysml</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+    </parent>
+	<name>Papyrus SysML Architecture</name>
+	<description>Papyrus SysML Architecture Contexts.</description>
+
+	<modules>
+		<module>org.eclipse.papyrus.sysml.architecture</module>
+	</modules>
+</project>

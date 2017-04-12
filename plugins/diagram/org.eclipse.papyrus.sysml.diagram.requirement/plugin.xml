@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+<!-- Diagram declaration -->
+<extension point="org.eclipse.papyrus.infra.ui.papyrusDiagram">
+	<creationCommand
+		creationCommandClass="org.eclipse.papyrus.sysml.diagram.requirement.RequirementDiagramCreateCommand"
+		creationCondition="org.eclipse.papyrus.sysml.diagram.requirement.RequirementDiagramCreationCondition"
+		icon="icons/obj16/Diagram_Requirement.gif"
+		id="org.eclipse.papyrus.sysml.diagram.requirement.CreateCommand"
+		language="sysml"
+		label="SysML Requirement Diagram"/>
+	<editorDiagram
+		actionBarContributorId="org.eclipse.papyrus.uml.diagram.common.part.UMLDiagramActionBarContributor"
+		factoryClass="org.eclipse.papyrus.sysml.diagram.requirement.RequirementDiagramEditorFactory"
+		icon="icons/obj16/Diagram_Requirement.gif" />
+</extension>
+
+<!-- Diagram creation command and handler -->
+<extension point="org.eclipse.ui.commands">
+	<command id="org.eclipse.papyrus.sysml.diagram.requirement.CreateCommand"
+		name="Create a new Requirement Diagram"
+		description="Create a new Requirement Diagram"
+		categoryId="org.eclipse.papyrus.editor.category"/>
+</extension>
+
+
+<!-- Diagram creation command registration in menu and toolbar -->
+
+<!-- Palette tool declaration (declares the real palette containment) -->
+<extension point="org.eclipse.papyrus.uml.diagram.common.paletteDefinition"
+	name="SYSML_Requirement">
+	
+	<paletteDefinition ID="SYSML_Requirement"
+		class="org.eclipse.papyrus.uml.diagram.common.service.PluginPaletteProvider"
+		name="SYSML_Requirement" icon="platform:/plugin/org.eclipse.gmf.runtime.diagram.ui/icons/group.gif" 
+		path="palettes/requirement.palette.xml"
+		provider="CEA LIST">
+		<Priority name="Low"/>
+		
+		<!-- Specify diagram this palette tools relate to -->						
+		<editor id="org.eclipse.papyrus.sysml.diagram.requirement"/>
+	</paletteDefinition>
+</extension>
+
+<extension point="org.eclipse.papyrus.uml.diagram.common.paletteDefinition"
+	name="SYSML_Requirement_Addition">
+
+	<paletteDefinition ID="SYSML_Requirement_Addition"
+		class="org.eclipse.papyrus.uml.diagram.common.service.PluginPaletteProvider"
+		name="Addition" icon="platform:/plugin/org.eclipse.gmf.runtime.diagram.ui/icons/group.gif" 
+		path="palettes/Addition.palette.xml"
+		provider="CEA LIST">
+		<Priority name="Low"/>
+		
+		<!-- Specify diagram this palette tools relate to -->						
+		<editor id="org.eclipse.papyrus.sysml.diagram.requirement"/>
+	</paletteDefinition>
+</extension>
+
+<!-- Diagram view providers declaration -->
+<extension point="org.eclipse.gmf.runtime.diagram.core.viewProviders">
+	<!-- Diagram view provider -->
+	<viewProvider class="org.eclipse.papyrus.sysml.diagram.requirement.provider.RequirementDiagramViewProvider">
+		<Priority name="Low"/>
+		<context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="RequirementDiagram"/>
+	</viewProvider>
+	
+	<!-- ViewProvider for inherited elements (from ClassDiagram ViewProvider) -->
+	<viewProvider class="org.eclipse.papyrus.sysml.diagram.requirement.provider.CustomInheritedElementViewProvider">
+		<Priority name="Low"/>
+		
+		<context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="Package_Shape, Package_Shape_CN, Class_Shape, Class_Shape_CN, NamedElement_Shape, Comment_Shape, Comment_Shape_CN, Constraint_Shape, Constraint_Shape_CN"/>
+		
+		<context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="Property_ClassAttributeLabel, Reception_ReceptionLabel, Operation_ClassOperationLabel, Class_ClassNestedClassifierLabel, Interface_ClassNestedClassifierLabel, Enumeration_ClassNestedClassifierLabel, PrimitiveType_ClassNestedClassifierLabel, DataType_ClassNestedClassifierLabel, Signal_ClassNestedClassifierLabel"/>
+		
+		<context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="Abstraction_Edge, Element_ContainmentEdge, Dependency_Edge, Comment_AnnotatedElementEdge, Constraint_ConstrainedElementEdge"/>
+		
+		<object id="elementtype.node"
+	        class="org.eclipse.papyrus.gmf.diagram.common.commands.ISemanticHintAdapter(org.eclipse.papyrus.sysml.diagram.common)">
+	     <method
+	        name="getSemanticHint()"
+			value="Package_Shape, Package_Shape_CN, Class_Shape, Class_Shape_CN, NamedElement_Shape, Comment_Shape, Comment_Shape_CN, Constraint_Shape, Constraint_Shape_CN">
+		</method>
+		</object>
+		<context viewClass="org.eclipse.gmf.runtime.notation.Node" elements="elementtype.node"/>
+	
+		<object id="elementtype.edge"
+	        class="org.eclipse.papyrus.gmf.diagram.common.commands.ISemanticHintAdapter(org.eclipse.papyrus.sysml.diagram.common)">
+	     <method
+	        name="getSemanticHint()"
+			value="Abstraction_Edge, Element_ContainmentEdge, Dependency_Edge, Comment_AnnotatedElementEdge, Constraint_ConstrainedElementEdge">
+		</method>
+		</object>
+		<context viewClass="org.eclipse.gmf.runtime.notation.Edge" elements="elementtype.edge"/>
+	
+		
+		<!-- Additional descriptors provided in case the semantic hint is is not provided -->	
+		
+		<!-- "uml.Package" -->
+		<object id="uml.Package" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Package"/>
+		</object>
+		
+		<!-- "uml.Class" -->
+		<object id="uml.Class" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Class"/>
+		</object>
+		
+		<!-- "uml.NamedElement" -->
+		<object id="uml.NamedElement" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.NamedElement"/>
+		</object>
+		
+		<!-- "uml.Comment" -->
+		<object id="uml.Comment" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Comment"/>
+		</object>
+		
+		<!-- "uml.Constraint" -->
+		<object id="uml.Constraint" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Constraint"/>
+		</object>
+		
+		<!-- "uml.Property" -->
+		<object id="uml.Property" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Property"/>
+		</object>
+		
+		<!-- "uml.Reception" -->
+		<object id="uml.Reception" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Reception"/>
+		</object>
+		
+		<!-- "uml.Operation" -->
+		<object id="uml.Operation" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Operation"/>
+		</object>
+		
+		<!-- "uml.Interface" -->
+		<object id="uml.Interface" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Interface"/>
+		</object>
+		
+		<!-- "uml.Enumeration" -->
+		<object id="uml.Enumeration" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Enumeration"/>
+		</object>
+		
+		<!-- "uml.PrimitiveType" -->
+		<object id="uml.PrimitiveType" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.PrimitiveType"/>
+		</object>
+		
+		<!-- "uml.DataType" -->
+		<object id="uml.DataType" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.DataType"/>
+		</object>
+		
+		<!-- "uml.Signal" -->
+		<object id="uml.Signal" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Signal"/>
+		</object>
+		
+		<!-- "uml.Abstraction" -->
+		<object id="uml.Abstraction" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Abstraction"/>
+		</object>
+		
+		<!-- "uml.Dependency" -->
+		<object id="uml.Dependency" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Dependency"/>
+		</object>
+		
+		<!-- Additional activation contexts for nodes semantic objects -->
+		<context viewClass="org.eclipse.gmf.runtime.notation.Node"
+			elements="uml.Package, uml.Class, uml.NamedElement, uml.Comment, uml.Constraint, uml.Property, uml.Reception, uml.Operation, uml.Interface, uml.Enumeration, uml.PrimitiveType, uml.DataType, uml.Signal"/>
+		
+		<!-- Additional activation contexts for edges semantic objects -->
+		<context viewClass="org.eclipse.gmf.runtime.notation.Edge"
+			elements="uml.Abstraction, uml.Dependency"/>
+			
+	</viewProvider>
+</extension>
+
+<!-- Diagram edit part providers declaration -->
+<extension point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders">
+	
+	<!-- Diagram edit part provider -->
+	<editpartProvider class="org.eclipse.papyrus.sysml.diagram.requirement.provider.RequirementDiagramEditPartProvider">
+		<Priority name="Low"/>
+		<object 
+			id="org.eclipse.papyrus.sysml.diagram.requirement.Diagram"
+			class="org.eclipse.gmf.runtime.notation.Diagram">
+			<method name="getType()" value="RequirementDiagram"/>
+		</object>
+		<context views="org.eclipse.papyrus.sysml.diagram.requirement.Diagram"/>	
+	</editpartProvider>
+	
+	<!-- EditPartProvider for inherited elements (from ClassDiagram) -->
+	<editpartProvider class="org.eclipse.papyrus.sysml.diagram.requirement.provider.InheritedClassDiagramEditPartProvider">
+		<Priority name="Low"/>
+		<object
+			id="PACKAGE"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="Package_Shape, Package_NameLabel, Package_PackagedElementCompartment"/>
+		</object>
+		<object
+			id="PACKAGE_CN"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="Package_Shape_CN, Package_NameLabel_CN, Package_PackagedElementCompartment_CN"/>
+		</object>
+		<object
+			id="CLASS"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="Class_Shape, Class_NameLabel, Class_AttributeCompartment, Class_OperationCompartment, Class_NestedClassifierCompartment"/>
+		</object>
+		<object
+			id="CLASS_CN"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="Class_Shape_CN, Class_NameLabel_CN, Class_AttributeCompartment_CN, Class_OperationCompartment_CN, Class_NestedClassifierCompartment_CN"/>
+		</object>
+		<object
+			id="DEFAULT_NAMED_ELEMENT"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="NamedElement_Shape, NamedElement_NameLabel"/>
+		</object>
+		<object
+			id="COMMENT"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="Comment_Shape, Comment_BodyLabel"/>
+		</object>
+		<object
+			id="COMMENT_CN"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="Comment_Shape_CN, Comment_BodyLabel_CN"/>
+		</object>
+		<object
+			id="CONSTRAINT"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="Constraint_Shape, Constraint_NameLabel, Constraint_BodyLabel"/>
+		</object>
+		<object
+			id="CONSTRAINT_CN"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="Constraint_Shape_CN, Constraint_NameLabel_CN, Constraint_FloatingNameLabel_CN"/>
+		</object>
+		
+		<object
+			id="CLASS_PROPERTY_CLN"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="Property_ClassAttributeLabel"/>
+		</object>
+		<object
+			id="CLASS_RECEPTION_CLN"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="Reception_ReceptionLabel"/>
+		</object>
+		<object
+			id="CLASS_OPERATION_CLN"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="Operation_ClassOperationLabel"/>
+		</object>
+		<object
+			id="CLASS_CLASS_CLN"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="Class_ClassNestedClassifierLabel"/>
+		</object>
+		<object
+			id="CLASS_INTERFACE_CLN"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="Interface_ClassNestedClassifierLabel"/>
+		</object>
+		<object
+			id="CLASS_ENUMERATION_CLN"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="Enumeration_ClassNestedClassifierLabel"/>
+		</object>
+		<object
+			id="CLASS_PRIMITIVE_TYPE_CLN"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="PrimitiveType_ClassNestedClassifierLabel"/>
+		</object>
+		<object
+			id="CLASS_DATA_TYPE_CLN"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="DataType_ClassNestedClassifierLabel"/>
+		</object>
+		<object
+			id="CLASS_SIGNAL_CLN"
+			class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="Signal_ClassNestedClassifierLabel"/>
+		</object>
+		
+		<object
+			id="ABSTRACTION"
+			class="org.eclipse.gmf.runtime.notation.Edge">
+			<method name="getType()" value="Abstraction_Edge, Abstraction_NameLabel, Abstraction_StereotypeLabel"/>
+		</object>
+		<object
+			id="CONTAINMENT_LINK"
+			class="org.eclipse.gmf.runtime.notation.Edge">
+			<method name="getType()" value="Element_ContainmentEdge"/>
+		</object>
+		<object
+			id="DEPENDENCY"
+			class="org.eclipse.gmf.runtime.notation.Edge">
+			<method name="getType()" value="Dependency_Edge, Dependency_NameLabel, Dependency_StereotypeLabel"/>
+		</object>
+		<object
+			id="COMMENT_ANNOTATED_ELEMENT"
+			class="org.eclipse.gmf.runtime.notation.Edge">
+			<method name="getType()" value="Comment_AnnotatedElementEdge"/>
+		</object>
+		<object
+			id="CONSTRAINT_CONSTRAINED_ELEMENT"
+			class="org.eclipse.gmf.runtime.notation.Edge">
+			<method name="getType()" value="Constraint_ConstrainedElementEdge"/>
+		</object>
+		
+		<context views="PACKAGE, PACKAGE_CN, CLASS, CLASS_CN, DEFAULT_NAMED_ELEMENT, COMMENT, COMMENT_CN, CONSTRAINT, CONSTRAINT_CN"/>
+		<context views="CLASS_PROPERTY_CLN, CLASS_RECEPTION_CLN, CLASS_OPERATION_CLN, CLASS_CLASS_CLN, CLASS_INTERFACE_CLN, CLASS_ENUMERATION_CLN, CLASS_PRIMITIVE_TYPE_CLN, CLASS_DATA_TYPE_CLN, CLASS_SIGNAL_CLN"/>
+		<context views="ABSTRACTION, CONTAINMENT_LINK, DEPENDENCY, COMMENT_ANNOTATED_ELEMENT, CONSTRAINT_CONSTRAINED_ELEMENT"/>
+		
+	</editpartProvider>
+</extension>
+
+<!-- Diagram edit policy provider -->	
+<extension
+	point="org.eclipse.gmf.runtime.diagram.ui.editpolicyProviders">
+	<editpolicyProvider
+		class="org.eclipse.papyrus.sysml.diagram.requirement.provider.CustomEditPolicyProvider">
+		<Priority name="Low"/>
+	</editpolicyProvider>
+</extension>
+
+<!-- Preference pages declaration -->
+<extension point="org.eclipse.ui.preferencePages" id="prefpages">
+
+	<!-- Diagram Preference pages declaration -->
+	<page
+		id="org.eclipse.papyrus.sysml.diagram.requirement.preferences"
+		name="Requirement Diagram"
+		category="org.eclipse.papyrus.infra.gmfdiag.preferences.diagrams"
+		class="org.eclipse.papyrus.sysml.diagram.requirement.preferences.RequirementDiagramGeneralPreferencePage">
+	</page>
+
+	<!-- Element Preference pages declaration -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+			
+			
+			
+			
+			
+			
+			
+
+</extension>
+
+
+<!-- // Start of user code custom extensions 
+  -->
+
+<!-- Insert custom extensions here. -->
+  <extension
+      id="ep-provider"
+      point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders">
+   <editpartProvider
+         class="org.eclipse.papyrus.sysml.diagram.requirement.provider.CustomRequirementEditPartProvider">
+      <Priority
+            name="High">
+      </Priority>
+      <object
+            class="org.eclipse.gmf.runtime.notation.Diagram"
+            id="generated-diagram">
+         <method name="getType()" value="Requirement"/>
+      </object>
+      <object
+            class="org.eclipse.gmf.runtime.notation.Node"
+            id="generated-nodes">
+            <method name="getType()" value="Dependency_Shape,AssociationClass_Shape,Association_Shape,InstanceSpecification_Shape,Component_Shape,Signal_Shape,Interface_Shape,Model_Shape,Enumeration_Shape,Package_Shape,InformationItem_Shape,Class_Shape,PrimitiveType_Shape,DataType_Shape,,Comment_Shape,Diagram_ShortcutShape,DurationObservation_Shape,TimeObservation_Shape,NamedElement_DefaultShape,Property_ClassAttributeLabel,Property_ComponentAttributeLabel,Property_SignalAttributeLabel,Property_InterfaceAttributeLabel,Property_PrimitiveTypeAttributeLabel,Property_DataTypeAttributeLabel,Class_ClassNestedClassifierLabel,Class_ComponentNestedClassifierLabel,Class_InterfaceNestedClassifierLabel,Operation_ClassOperationLabel,Operation_ComponentOperationLabel,Operation_InterfaceOperationLabel,Operation_PrimitiveTypeOperationLabel,Operation_DataTypeOperationLabel,ConnectableElementTemplateParameter_TemplateParameterLabel,OperationTemplateParameter_TemplateParameterLabel,ClassifierTemplateParameter_TemplateParameterLabel,TemplateParameter_TemplateParameterLabel,EnumerationLiteral_LiteralLabel,Reception_ReceptionLabel,Reception_InterfaceReceptionLabel,Slot_SlotLabel,RedefinableTemplateSignature_Shape,TemplateSignature_Shape,InstanceSpecification_Shape_CN,Component_Shape_CN,Signal_Shape_CN,Interface_Shape_CN,Model_Shape_CN,Enumeration_Shape_CN,Package_Shape_CN,InformationItem_Shape_CN,Class_Shape_CN,PrimitiveType_Shape_CN,DataType_Shape_CN,Comment_Shape_CN,_CN,Interface_ClassNestedClassifierLabel,Interface_ComponentNestedClassifierLabel,Interface_InterfaceNestedClassifierLabel,Enumeration_ClassNestedClassifierLabel,Enumeration_ComponentNestedClassifierLabel,Enumeration_InterfaceNestedClassifierLabel,PrimitiveType_ClassNestedClassifierLabel,PrimitiveType_ComponentNestedClassifierLabel,PrimitiveType_InterfaceNestedClassifierLabel,DataType_ClassNestedClassifierLabel,DataType_ComponentNestedClassifierLabel,DataType_InterfaceNestedClassifierLabel,Signal_ClassNestedClassifierLabel,Signal_ComponentNestedClassifierLabel,Signal_InterfaceNestedClassifierLabel,Component_ClassNestedClassifierLabel,Component_InterfaceNestedClassifierLabel,Component_ComponentNestedClassifierLabel"/>
+      </object>
+      <object
+            class="org.eclipse.gmf.runtime.notation.Edge"
+            id="generated-links">
+            <method name="getType()" value="AssociationClass_TetherEdge,AssociationClass_Edge,Association_Edge,Association_BranchEdge,Generalization_Edge,InterfaceRealization_Edge,Substitution_Edge,Realization_Edge,Abstraction_Edge,Usage_Edge,Dependency_Edge,Dependency_BranchEdge,ElementImport_Edge,PackageImport_Edge,PackageMerge_Edge,ProfileApplication_Edge,Comment_AnnotatedElementEdge,Constraint_ConstrainedElementEdge,TemplateBinding_Edge,GeneralizationSet_Edge,InstanceSpecification_Edge,Element_ContainmentEdge,TimeObservation_EventEdge,DurationObservation_EventEdge,InformationFlow_Edge,Constraint_ContextEdge"/>
+      </object>
+      <object
+            class="org.eclipse.gmf.runtime.notation.Node"
+            id="generated-labels">
+            <method name="getType()" value="Dependency_MultiNameLabel,Dependency_FloatingNameLabel,AssociationClass_NameLabel,AssociationClass_FloatingNameLabel,Association_FloatingNameLabel,InstanceSpecification_NameLabel,InstanceSpecification_FloatingNameLabel,Component_NameLabel,Component_FloatingNameLabel,Signal_NameLabel,Signal_FloatingNameLabel,Interface_NameLabel,Interface_FloatingNameLabel,Model_NameLabel,Enumeration_NameLabel,Enumeration_FloatingNameLabel,Package_NameLabel,InformationItem_NameLabel,InformationItem_FloatingNameLabel,Class_NameLabel,Class_FloatingNameLabel,PrimitiveType_NameLabel,PrimitiveType_FloatingNameLabel,DataType_NameLabel,DataType_FloatingNameLabel,Constraint_NameLabel,Constraint_BodyLabel,Comment_BodyLabel,Diagram_NameLabel,DurationObservation_FloatingNameLabel,DurationObservation_StereotypeLabel,TimeObservation_FloatingNameLabel,TimeObservation_StereotypeLabel,NamedElement_NameLabel,InstanceSpecification_NameLabel_CN,InstanceSpecification_FloatingNameLabel_CN,Component_NameLabel_CN,Component_FloatingNameLabel_CN,Signal_NameLabel_CN,Signal_FloatingNameLabel_CN,Interface_NameLabel_CN,Interface_FloatingNameLabel_CN,Model_NameLabel_CN,Enumeration_NameLabel_CN,Enumeration_FloatingNameLabel_CN,Package_NameLabel_CN,InformationItem_NameLabel_CN,InformationItem_FloatingNameLabel_CN,Class_NameLabel_CN,Class_FloatingNameLabel_CN,PrimitiveType_NameLabel_CN,PrimitiveType_FloatingNameLabel_CN,DataType_NameLabel_CN,DataType_FloatingNameLabel_CN,Comment_BodyLabel_CN,Constraint_NameLabel_CN,Constraint_FloatingNameLabel_CN"/>
+      </object>
+      <object
+            class="org.eclipse.gmf.runtime.notation.Node"
+            id="generated-compartments">
+            <method name="getType()" value="Class_AttributeCompartment_CN,Class_OperationCompartment_CN,Class_NestedClassifierCompartment_CN,Component_AttributeCompartment_CN,Component_OperationCompartment_CN,Component_NestedClassifierCompartment_CN,Signal_AttributeCompartment_CN,Interface_AttributeCompartment_CN,Interface_OperationCompartment_CN,Interface_NestedClassifierCompartment_CN,PrimitiveType_AttributeCompartment_CN,PrimitiveType_OperationCompartment_CN,DataType_AttributeCompartment_CN,DataType_OperationCompartment_CN,Model_PackagedElementCompartment_CN,Package_PackagedElementCompartment_CN,Enumeration_LiteralCompartment_CN,InstanceSpecification_SlotCompartment_CN,Class_AttributeCompartment,Class_OperationCompartment,Class_NestedClassifierCompartment,Component_AttributeCompartment,Component_OperationCompartment,Component_NestedClassifierCompartment,Interface_AttributeCompartment,Interface_OperationCompartment,Interface_NestedClassifierCompartment,PrimitiveType_AttributeCompartment,PrimitiveType_OperationCompartment,DataType_AttributeCompartment,DataType_OperationCompartment,AssociationClass_AttributeCompartment,InstanceSpecification_SlotCompartment,Signal_AttributeCompartment,Model_PackagedElementCompartment,Package_PackagedElementCompartment,Enumeration_LiteralCompartment,AssociationClass_OperationCompartment,AssociationClass_NestedClassifierCompartment,RedefinableTemplateSignature_TemplateParameterCompartment,TemplateSignature_TemplateParameterCompartment"/>
+      </object>
+      <object
+            id="generated-diagram,generated-nodes,generated-links,generated-labels,generated-compartments">
+      </object>
+   </editpartProvider>
+</extension>
+<extension point="org.eclipse.papyrus.infra.gmfdiag.common.notationTypesMapping">
+		<diagramMappings diagramID="RequirementDiagram">
+			<mapping
+				humanReadableType="attributes"
+				type="Class_AttributeCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="operations"
+				type="Class_OperationCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="nested classifiers"
+				type="Class_NestedClassifierCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="attributes"
+				type="Component_AttributeCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="operations"
+				type="Component_OperationCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="nested classifiers"
+				type="Component_NestedClassifierCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="attributes"
+				type="Signal_AttributeCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="attributes"
+				type="Interface_AttributeCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="operations"
+				type="Interface_OperationCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="nested classifiers"
+				type="Interface_NestedClassifierCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="attributes"
+				type="PrimitiveType_AttributeCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="operations"
+				type="PrimitiveType_OperationCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="attributes"
+				type="DataType_AttributeCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="operations"
+				type="DataType_OperationCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="packaged elements"
+				type="Model_PackagedElementCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="packaged elements"
+				type="Package_PackagedElementCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="literals"
+				type="Enumeration_LiteralCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="slots"
+				type="InstanceSpecification_SlotCompartment_CN">
+			</mapping>
+			<mapping
+				humanReadableType="attributes"
+				type="Class_AttributeCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="operations"
+				type="Class_OperationCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="nested classifiers"
+				type="Class_NestedClassifierCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="attributes"
+				type="Component_AttributeCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="operations"
+				type="Component_OperationCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="nested classifiers"
+				type="Component_NestedClassifierCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="attributes"
+				type="Interface_AttributeCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="operations"
+				type="Interface_OperationCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="nested classifiers"
+				type="Interface_NestedClassifierCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="attributes"
+				type="PrimitiveType_AttributeCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="operations"
+				type="PrimitiveType_OperationCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="attributes"
+				type="DataType_AttributeCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="operations"
+				type="DataType_OperationCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="attributes"
+				type="AssociationClass_AttributeCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="slots"
+				type="InstanceSpecification_SlotCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="attributes"
+				type="Signal_AttributeCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="packaged elements"
+				type="Model_PackagedElementCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="packaged elements"
+				type="Package_PackagedElementCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="literals"
+				type="Enumeration_LiteralCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="operations"
+				type="AssociationClass_OperationCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="nested classifiers"
+				type="AssociationClass_NestedClassifierCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="TemplateParameter"
+				type="RedefinableTemplateSignature_TemplateParameterCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="TemplateParameter"
+				type="TemplateSignature_TemplateParameterCompartment">
+			</mapping>
+			<mapping
+				humanReadableType="SourceRole"
+				type="AssociationClass_SourceRoleLabel">
+			</mapping>
+			<mapping
+				humanReadableType="TargetRole"
+				type="AssociationClass_TargetRoleLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="Association_StereotypeLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Name"
+				type="Association_NameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="TargetRole"
+				type="Association_TargetRoleLabel">
+			</mapping>
+			<mapping
+				humanReadableType="SourceRole"
+				type="Association_SourceRoleLabel">
+			</mapping>
+			<mapping
+				humanReadableType="SourceMultiplicity"
+				type="Association_SourceMultiplicityLabel">
+			</mapping>
+			<mapping
+				humanReadableType="TargetMultiplicity"
+				type="Association_TargetMultiplicityLabel">
+			</mapping>
+			<mapping
+				humanReadableType="TargetRole"
+				type="Association_BranchRoleLabel">
+			</mapping>
+			<mapping
+				humanReadableType="TargetMultiplicity"
+				type="Association_BranchMultiplicityLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="Generalization_StereotypeLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="InterfaceRealization_StereotypeLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Name"
+				type="InterfaceRealization_NameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="Substitution_StereotypeLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Name"
+				type="Substitution_NameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="Realization_StereotypeLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Name"
+				type="Realization_NameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Name"
+				type="Abstraction_NameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="Abstraction_StereotypeLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Name"
+				type="Usage_NameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="Usage_StereotypeLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Name"
+				type="Dependency_NameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="Dependency_StereotypeLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Alias"
+				type="ElementImport_AliasLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="ElementImport_StereotypeLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="PackageImport_StereotypeLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="PackageMerge_StereotypeLabel">
+			</mapping>
+			<mapping
+				humanReadableType="TemplateParameterSubstitution"
+				type="TemplateBinding_SubstitutionLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="TemplateBinding_StereotypeLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="GeneralizationSet_StereotypeLabel">
+			</mapping>
+			<mapping
+				humanReadableType="SourceRole"
+				type="InstanceSpecification_SourceRoleLabel">
+			</mapping>
+			<mapping
+				humanReadableType="TargetRole"
+				type="InstanceSpecification_TargetRoleLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="InformationFlow_StereotypeLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="Constraint_KeywordLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="InstanceSpecification_FloatingNameLabel_CN">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="Component_FloatingNameLabel_CN">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="Signal_FloatingNameLabel_CN">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="Interface_FloatingNameLabel_CN">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="Enumeration_FloatingNameLabel_CN">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="InformationItem_FloatingNameLabel_CN">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="Class_FloatingNameLabel_CN">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="PrimitiveType_FloatingNameLabel_CN">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="DataType_FloatingNameLabel_CN">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="Dependency_FloatingNameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="AssociationClass_FloatingNameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="Association_FloatingNameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="InstanceSpecification_FloatingNameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="Component_FloatingNameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="Signal_FloatingNameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="Interface_FloatingNameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="Enumeration_FloatingNameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="InformationItem_FloatingNameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="Class_FloatingNameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="PrimitiveType_FloatingNameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="DataType_FloatingNameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="DurationObservation_FloatingNameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="DurationObservation_StereotypeLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Floating Label"
+				type="TimeObservation_FloatingNameLabel">
+			</mapping>
+			<mapping
+				humanReadableType="Stereotype"
+				type="TimeObservation_StereotypeLabel">
+			</mapping>
+		</diagramMappings>
+	</extension>
+<extension
+      point="org.eclipse.papyrus.infra.gmfdiag.common.diagramReconciler">
+   <diagramReconciler
+         diagramType="RequirementDiagram"
+         reconcilerClass="org.eclipse.papyrus.uml.diagram.clazz.custom.migration.ClassReconciler_1_1_0"
+         source="1.0.0"
+         target="1.3.0">
+   </diagramReconciler>
+   <diagramReconciler
+         diagramType="RequirementDiagram"
+         reconcilerClass="org.eclipse.papyrus.uml.diagram.clazz.custom.migration.ClassReconcilerForCompartment_1_2_0"
+         source="1.1.0"
+         target="1.3.0">
+   </diagramReconciler>
+   <diagramReconciler
+         diagramType="RequirementDiagram"
+         reconcilerClass="org.eclipse.papyrus.uml.diagram.clazz.custom.migration.ClassReconciler_1_2_0"
+         source="1.1.0"
+         target="1.3.0">
+   </diagramReconciler>
+</extension>
+<!-- // End of user code 
+  -->
+
+
+   <extension
+         point="org.eclipse.papyrus.infra.gmfdiag.common.visualTypeProviders">
+      <visualTypeProvider
+            class="org.eclipse.papyrus.sysml.diagram.requirement.provider.RequirementVisualTypeProvider"
+            diagramType="RequirementDiagram">
+      </visualTypeProvider>
+   </extension>
+</plugin>

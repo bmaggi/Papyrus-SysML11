@@ -1,0 +1,29 @@
+target "Papyrus Oxygen" with source requirements
+
+location "http://download.eclipse.org/releases/oxygen/" eclipse-oxygen {
+ org.eclipse.platform.feature.group lazy
+ org.eclipse.rcp.feature.group lazy
+ org.eclipse.jdt.feature.group lazy
+ org.eclipse.equinox.p2.discovery.feature.feature.group lazy
+ org.eclipse.equinox.executable.feature.group lazy
+ org.eclipse.ocl.uml.feature.group lazy
+}
+
+location "http://download.eclipse.org/modeling/mdt/papyrus/updates/nightly/oxygen/main/" eclipse-papyrus-oxygen-nightly {
+ org.eclipse.papyrus.sdk.feature.feature.group lazy
+ org.eclipse.papyrus.views.properties.model.xwt lazy
+ }
+ 
+ location nattable "http://download.eclipse.org/nattable/releases/1.5.0/repository" {
+	org.eclipse.nebula.widgets.nattable.core.feature.feature.group
+	org.eclipse.nebula.widgets.nattable.core.source.feature.feature.group
+	org.eclipse.nebula.widgets.nattable.extension.glazedlists.feature.feature.group
+	org.eclipse.nebula.widgets.nattable.extension.glazedlists.source.feature.feature.group
+	org.eclipse.nebula.widgets.nattable.extension.nebula.feature.feature.group
+	org.eclipse.nebula.widgets.nattable.extension.nebula.source.feature.feature.group
+}
+ 
+location "https://hudson.eclipse.org/papyrus/job/Papyrus-Master-Developer/lastSuccessfulBuild/artifact/repository/" eclipse-papyrus-developer-master {
+	org.eclipse.papyrus.junit.feature.feature.group lazy
+}
+ 

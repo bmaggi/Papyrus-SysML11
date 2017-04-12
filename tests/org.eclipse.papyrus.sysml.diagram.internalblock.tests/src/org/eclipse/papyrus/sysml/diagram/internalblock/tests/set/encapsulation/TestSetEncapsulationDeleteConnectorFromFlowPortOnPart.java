@@ -1,0 +1,80 @@
+/*****************************************************************************
+ * Copyright (c) 2012, 2014 CEA LIST and others.
+ *
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *		
+ *  CEA LIST - Initial API and implementation
+ *  Christian W. Damus (CEA) - bug 434993
+ *
+ *****************************************************************************/
+package org.eclipse.papyrus.sysml.diagram.internalblock.tests.set.encapsulation;
+
+import org.eclipse.gmf.runtime.notation.View;
+import org.junit.BeforeClass;
+
+/**
+ * JUnit tests for Connector link removal during Block#setIsEncapsulated() test (via palette tools).
+ */
+public class TestSetEncapsulationDeleteConnectorFromFlowPortOnPart extends AbstractSetEncapsulationDeleteConnectorTest {
+
+	@BeforeClass
+	public static void init() throws Exception {
+		sourceView = flowportOnPartSourceView;
+	}
+
+	@BeforeClass
+	public static void initExpectedResults() throws Exception {
+
+		// Initialize source creation results
+
+		isConnectorDestroyed.put(actorPartTargetView, false);
+		isConnectorDestroyed.put(nestedActorPartTargetView, false);
+		isConnectorDestroyed.put(subNestedActorPartContainer1_1_1TargetView, false);
+		isConnectorDestroyed.put(subNestedActorPartContainer1_2_1TargetView, false);
+		isConnectorDestroyed.put(subNestedActorPartContainer1_1_2TargetView, false);
+		
+		isConnectorDestroyed.put(portOnBlockTargetView, false);
+		isConnectorDestroyed.put(portOnPartTargetView, false);
+		isConnectorDestroyed.put(portOnNestedPartTargetView, false);
+
+		isConnectorDestroyed.put(flowportOnBlockTargetView, false);
+		isConnectorDestroyed.put(flowportOnPartTargetView, false);
+		isConnectorDestroyed.put(flowportOnNestedPartTargetView, false);
+
+		isConnectorDestroyed.put(partTargetView, false);
+		isConnectorDestroyed.put(nestedPartTargetView, false);
+		isConnectorDestroyed.put(subNestedPartContainer1_1_1TargetView, false);
+		isConnectorDestroyed.put(subNestedPartContainer1_2_1TargetView, false);
+		isConnectorDestroyed.put(subNestedPartContainer1_1_2TargetView, false);
+
+		isConnectorDestroyed.put(propertyTargetView, false);
+		isConnectorDestroyed.put(nestedPropertyTargetView, false);
+		isConnectorDestroyed.put(subNestedPropertyContainer1_1_1TargetView, false);
+		isConnectorDestroyed.put(subNestedPropertyContainer1_2_1TargetView, false);
+		isConnectorDestroyed.put(subNestedPropertyContainer1_1_2TargetView, false);
+
+		isConnectorDestroyed.put(referenceTargetView, false);
+		isConnectorDestroyed.put(nestedReferenceTargetView, false);
+		isConnectorDestroyed.put(subNestedReferenceContainer1_1_1TargetView, false);
+		isConnectorDestroyed.put(subNestedReferenceContainer1_2_1TargetView, false);
+		isConnectorDestroyed.put(subNestedReferenceContainer1_1_2TargetView, false);
+
+		isConnectorDestroyed.put(valueTargetView, false);
+		isConnectorDestroyed.put(nestedValueTargetView, false);
+		isConnectorDestroyed.put(subNestedValueContainer1_1_1TargetView, false);
+		isConnectorDestroyed.put(subNestedValueContainer1_2_1TargetView, false);
+		isConnectorDestroyed.put(subNestedValueContainer1_1_2TargetView, false);
+		
+		// Initialize connector creation possibility
+		for(View view : isConnectorDestroyed.keySet()) {
+			isCreationAllowed.put(view, true);
+		}
+
+	}
+
+}

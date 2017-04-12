@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+	<parent>
+	    <groupId>org.eclipse.papyrus.sysml</groupId>
+		<artifactId>org.eclipse.papyrus.sysml.parent</artifactId>
+		<version>3.0.0-SNAPSHOT</version>
+    </parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>org.eclipse.papyrus.sysml</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>	
+	
+	<name>Papyrus SysML</name>
+	<description>Top container of the Papyrus SysML 1.1 modeler</description>
+
+	<modules>
+		<module>architecture</module>
+		<module>diagram</module>
+		<module>modelexplorer</module>
+		<module>nattable</module>
+		<module>org.eclipse.papyrus.sysml</module>
+		<module>org.eclipse.papyrus.sysml.edit</module>
+		<module>org.eclipse.papyrus.sysml.service.types</module>
+		<module>properties</module>
+	</modules>
+	
+	
+	
+</project>
