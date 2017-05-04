@@ -18,12 +18,12 @@ import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.gmf.runtime.common.core.command.AbstractCommand;
 import org.eclipse.gmf.runtime.common.core.command.CommandResult;
 import org.eclipse.gmf.runtime.common.core.command.ICommand;
+import org.eclipse.papyrus.infra.architecture.ArchitectureDomainManager;
 import org.eclipse.papyrus.infra.core.architecture.RepresentationKind;
 import org.eclipse.papyrus.infra.core.architecture.merged.MergedArchitectureDescriptionLanguage;
-import org.eclipse.papyrus.infra.nattable.representation.PapyrusSyncTable;
-import org.eclipse.papyrus.infra.architecture.ArchitectureDomainManager;
 import org.eclipse.papyrus.infra.nattable.common.reconciler.TableReconciler;
 import org.eclipse.papyrus.infra.nattable.model.nattable.Table;
+import org.eclipse.papyrus.infra.nattable.representation.PapyrusTable;
 import org.eclipse.papyrus.sysml.architecture.SysMLArchitectureContextIds;
 
 /**
@@ -44,9 +44,9 @@ public class SysMLTableReconciler_1_3_0 extends TableReconciler {
 			RepresentationKind newTableKind = null;
 			if (oldTableKind != null) {
 				if (ALLOCATION_TABLE.equals(oldTableKind.getName())) {
-					newTableKind = getSyncTableKind(oldTableKind.getName(), table);
+					newTableKind = getTableKind(oldTableKind.getName(), table);
 				} else if (REQUIREMENT_TABLE.equals(oldTableKind.getName())) {
-					newTableKind = getSyncTableKind(oldTableKind.getName(), table);
+					newTableKind = getTableKind(oldTableKind.getName(), table);
 				}
 			};
 			
@@ -56,12 +56,12 @@ public class SysMLTableReconciler_1_3_0 extends TableReconciler {
 		return null;
 	}
 
-	protected PapyrusSyncTable getSyncTableKind(String name, Table table) {
+	protected PapyrusTable getTableKind(String name, Table table) {
 		ArchitectureDomainManager manager = ArchitectureDomainManager.getInstance();
 		MergedArchitectureDescriptionLanguage context = (MergedArchitectureDescriptionLanguage) manager.getArchitectureContextById(SysMLArchitectureContextIds.SysML);
 		for(RepresentationKind pKind : context.getRepresentationKinds()) {
 			if (pKind.getName().equals(name)) {
-				PapyrusSyncTable tKind = (PapyrusSyncTable) pKind;
+				PapyrusTable tKind = (PapyrusTable) pKind;
 				if (tKind.getModelRules().get(0).getElement().isInstance(table.getContext())) {
 					return tKind;
 				}

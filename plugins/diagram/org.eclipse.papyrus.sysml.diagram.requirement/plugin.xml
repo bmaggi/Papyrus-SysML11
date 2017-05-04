@@ -25,40 +25,6 @@
 		categoryId="org.eclipse.papyrus.editor.category"/>
 </extension>
 
-
-<!-- Diagram creation command registration in menu and toolbar -->
-
-<!-- Palette tool declaration (declares the real palette containment) -->
-<extension point="org.eclipse.papyrus.uml.diagram.common.paletteDefinition"
-	name="SYSML_Requirement">
-	
-	<paletteDefinition ID="SYSML_Requirement"
-		class="org.eclipse.papyrus.uml.diagram.common.service.PluginPaletteProvider"
-		name="SYSML_Requirement" icon="platform:/plugin/org.eclipse.gmf.runtime.diagram.ui/icons/group.gif" 
-		path="palettes/requirement.palette.xml"
-		provider="CEA LIST">
-		<Priority name="Low"/>
-		
-		<!-- Specify diagram this palette tools relate to -->						
-		<editor id="org.eclipse.papyrus.sysml.diagram.requirement"/>
-	</paletteDefinition>
-</extension>
-
-<extension point="org.eclipse.papyrus.uml.diagram.common.paletteDefinition"
-	name="SYSML_Requirement_Addition">
-
-	<paletteDefinition ID="SYSML_Requirement_Addition"
-		class="org.eclipse.papyrus.uml.diagram.common.service.PluginPaletteProvider"
-		name="Addition" icon="platform:/plugin/org.eclipse.gmf.runtime.diagram.ui/icons/group.gif" 
-		path="palettes/Addition.palette.xml"
-		provider="CEA LIST">
-		<Priority name="Low"/>
-		
-		<!-- Specify diagram this palette tools relate to -->						
-		<editor id="org.eclipse.papyrus.sysml.diagram.requirement"/>
-	</paletteDefinition>
-</extension>
-
 <!-- Diagram view providers declaration -->
 <extension point="org.eclipse.gmf.runtime.diagram.core.viewProviders">
 	<!-- Diagram view provider -->
@@ -182,6 +148,8 @@
 			elements="uml.Abstraction, uml.Dependency"/>
 			
 	</viewProvider>
+	
+		<!-- Custom graphical types view provider -->
 </extension>
 
 <!-- Diagram edit part providers declaration -->
@@ -869,4 +837,21 @@
             diagramType="RequirementDiagram">
       </visualTypeProvider>
    </extension>
+   
+   <extension point="org.eclipse.papyrus.infra.gmfdiag.common.paletteDefinition">
+	<paletteDefinition
+		ID="org.eclipse.papyrus.sysml.diagram.requirement.paletteconfiguration"
+		class="org.eclipse.papyrus.infra.gmfdiag.common.service.palette.ExtendedPluginPaletteProvider"
+		name="Papyrus SysML requirement editor Plugin Palette" 
+		path="palettes/PapyrusSYSMLRequirementDiagram.paletteconfiguration"
+		provider="Eclipse Modeling Project">
+		<Priority
+			name="Lowest">
+		</Priority>
+		<!-- Specify diagram this palette tools relate to -->
+		<editor
+			id="org.eclipse.papyrus.sysml.diagram.requirement">
+		</editor>
+	</paletteDefinition>
+</extension>
 </plugin>

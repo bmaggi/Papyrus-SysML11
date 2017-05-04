@@ -12,116 +12,6 @@
 	<command id="org.eclipse.papyrus.sysml.diagram.internalblock.CreateCommand" name="Create a new Internal Block Diagram" description="Create a new Internal Block Diagram" categoryId="org.eclipse.papyrus.editor.category"></command>
 </extension>
 
-   
-
-<!-- Diagram creation command registration in menu and toolbar -->
-
-<!-- Palette tool definition (defines tools possibly used by the palette(s)) -->
-<extension point="org.eclipse.gmf.runtime.diagram.ui.paletteProviders" name="SYSML_InternalBlock_Predefined_Entries" id="org.eclipse.papyrus.sysml.diagram.blockdefinition.palettedefinition"> 
-		
-	<paletteProvider class="org.eclipse.gmf.runtime.diagram.ui.providers.DefaultPaletteProvider">
-	<Priority name="Lowest"></Priority> <!-- Lower priority than Palette tool declaration -->
-	
-	<!-- SysML Internal Block Diagram specific tool definition -->
-	<contribution factoryClass="org.eclipse.papyrus.sysml.diagram.internalblock.factory.DiagramPaletteFactory">
-			
-		<!-- internalblock.tool.block -->
-		<entry defineOnly="true" description="Create a Block" id="internalblock.tool.block" kind="tool" label="Block" large_icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/blocks/Block.gif" small_icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/blocks/Block.gif">
-		</entry>
-			
-		<!-- internalblock.tool.blockpropertycomposite -->
-		<entry defineOnly="true" description="Create a BlockPropertyComposite" id="internalblock.tool.blockpropertycomposite" kind="tool" label="BlockPropertyComposite" large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif" small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
-		</entry>
-			
-		<!-- internalblock.tool.flowport -->
-		<entry defineOnly="true" description="Create a FlowPort" id="internalblock.tool.flowport" kind="tool" label="FlowPort" large_icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort.gif" small_icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort.gif">
-		</entry>
-			
-		<!-- internalblock.tool.port -->
-		<entry defineOnly="true" description="Create a Port" id="internalblock.tool.port" kind="tool" label="Port" large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Port.gif" small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Port.gif">
-		</entry>
-		<!-- Start of user code Custom node button entry  -->
-		
-		<!-- internalblock.tool.property -->
-		<entry defineOnly="true" description="Create a Property" id="internalblock.tool.property" kind="tool" label="Property" large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif" small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
-		</entry>
-		
-		<!-- internalblock.tool.part -->
-		<entry defineOnly="true" description="Create a Part" id="internalblock.tool.part" kind="tool" label="Part" large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif" small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
-		</entry>
-		
-		<!-- internalblock.tool.reference -->
-		<entry defineOnly="true" description="Create a Reference" id="internalblock.tool.reference" kind="tool" label="Reference" large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif" small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
-		</entry>
-
-		<!-- internalblock.tool.actorpart -->
-		<entry defineOnly="true" description="Create an ActorPart" id="internalblock.tool.actorpart" kind="tool" label="ActorPart" large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif" small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
-		</entry>
-		
-		<!-- internalblock.tool.value -->
-		<entry defineOnly="true" description="Create a Value" id="internalblock.tool.value" kind="tool" label="Value" large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif" small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
-		</entry>
-				
-		<!-- internalblock.tool.flowport (IN) -->
-		<entry defineOnly="true" description="Create a FlowPort (IN)" id="internalblock.tool.flowport_in" kind="tool" label="FlowPort" large_icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort_IN.gif" small_icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort_IN.gif">
-		</entry>
-
-		<!-- internalblock.tool.flowport (OUT) -->
-		<entry defineOnly="true" description="Create a FlowPort (OUT)" id="internalblock.tool.flowport_out" kind="tool" label="FlowPort" large_icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort_OUT.gif" small_icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort_OUT.gif">
-		</entry>
-		
-		<!-- internalblock.tool.flowport (INOUT) -->
-		<entry defineOnly="true" description="Create a FlowPort (INOUT)" id="internalblock.tool.flowport_inout" kind="tool" label="FlowPort" large_icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort_INOUT.gif" small_icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort_INOUT.gif">
-		</entry>
-
-		<!-- internalblock.tool.flowport -->
-		<entry defineOnly="true" description="Create a FlowPort (non atomic)" id="internalblock.tool.flowport_na" kind="tool" label="FlowPort (non atomic)" large_icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort_NA.gif" small_icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort_NA.gif">
-		</entry>
-				
-		<!-- internalblock.tool.comment -->
-		<entry defineOnly="true" description="Create a Comment" id="internalblock.tool.comment" kind="tool" label="Comment" large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Comment.gif" small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Comment.gif">
-		</entry>
-		
-		<!-- internalblock.tool.constraint -->
-		<entry defineOnly="true" description="Create a Constraint" id="internalblock.tool.constraint" kind="tool" label="Constraint" large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Constraint.gif" small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Constraint.gif">
-		</entry>
-								
-		<!-- End of user code  -->
-		
-			
-		<!-- internalblock.tool.connector -->
-		<entry defineOnly="true" description="Create a Connector" id="internalblock.tool.connector" kind="tool" label="Connector" large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Connector.gif" small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Connector.gif">
-		</entry>
-			
-		<!-- internalblock.tool.dependency -->
-		<entry defineOnly="true" description="Create a Dependency" id="internalblock.tool.dependency" kind="tool" label="Dependency" large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Dependency.gif" small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Dependency.gif">
-		</entry>
-		<!-- Start of user code Custom edge button entry  -->
-		
-		<!-- internalblock.tool.comment_constraint_link -->
-		<entry defineOnly="true" description="Create a Comment / Constraint link" id="internalblock.tool.comment_constraint_link" kind="tool" label="Comment / Constraint link" large_icon="icons/obj16/Link.gif" small_icon="icons/obj16/Link.gif">
-		</entry>
-			
-		<!-- End of user code  -->
-			
-	</contribution>
-	
-	<!-- Specify diagram this palette tools relate to -->				
-	<editor id="org.eclipse.papyrus.sysml.diagram.internalblock"></editor>
-	
-	</paletteProvider>	
-</extension>
-
-<!-- Palette tool declaration (declares the real palette containment) -->
-<extension point="org.eclipse.papyrus.uml.diagram.common.paletteDefinition" name="SYSML_InternalBlock">
-	
-	<paletteDefinition ID="SYSML_InternalBlock" class="org.eclipse.papyrus.uml.diagram.common.service.PluginPaletteProvider" name="SYSML_InternalBlock" icon="platform:/plugin/org.eclipse.gmf.runtime.diagram.ui/icons/group.gif" path="palettes/internalblock.palette.xml" provider="CEA LIST">
-		<Priority name="Low"></Priority>
-		
-		<!-- Specify diagram this palette tools relate to -->						
-		<editor id="org.eclipse.papyrus.sysml.diagram.internalblock"></editor>
-	</paletteDefinition>
-</extension>
 
 <!-- Diagram view providers declaration -->
 <extension point="org.eclipse.gmf.runtime.diagram.core.viewProviders">
@@ -554,4 +444,20 @@
       </visualTypeProvider>
    </extension>
 
+<extension point="org.eclipse.papyrus.infra.gmfdiag.common.paletteDefinition">
+	<paletteDefinition
+		ID="org.eclipse.papyrus.sysml.diagram.internalblock.paletteconfiguration"
+		class="org.eclipse.papyrus.infra.gmfdiag.common.service.palette.ExtendedPluginPaletteProvider"
+		name="Papyrus SysML internalblock editor Plugin Palette" 
+		path="palettes/PapyrusSysMLInternalBlockDiagram.paletteconfiguration"
+		provider="Eclipse Modeling Project">
+		<Priority
+			name="Lowest">
+		</Priority>
+		<!-- Specify diagram this palette tools relate to -->
+		<editor
+			id="org.eclipse.papyrus.sysml.diagram.internalblock">
+		</editor>
+	</paletteDefinition>
+</extension>
 </plugin>
