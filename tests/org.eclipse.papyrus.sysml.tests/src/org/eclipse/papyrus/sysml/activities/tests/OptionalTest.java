@@ -18,6 +18,7 @@ import junit.textui.TestRunner;
 
 import org.eclipse.papyrus.sysml.activities.ActivitiesFactory;
 import org.eclipse.papyrus.sysml.activities.Optional;
+import org.junit.Ignore;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,6 +27,7 @@ import org.eclipse.papyrus.sysml.activities.Optional;
  * 
  * @generated
  */
+@Ignore("no tests")
 public class OptionalTest extends TestCase {
 
 	/**

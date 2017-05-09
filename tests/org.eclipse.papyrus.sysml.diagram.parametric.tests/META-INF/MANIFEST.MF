@@ -9,7 +9,20 @@ Require-Bundle: org.eclipse.papyrus.infra.gmfdiag.commands;bundle-version="[3.0.
  org.eclipse.papyrus.infra.gmfdiag.common;bundle-version="[3.0.0,4.0.0)",
  org.eclipse.papyrus.uml.diagram.common;bundle-version="[3.0.0,4.0.0)",
  org.eclipse.papyrus.sysml.service.types;bundle-version="[2.0.0,3.0.0)",
- org.eclipse.papyrus.sysml.diagram.internalblock;bundle-version="[3.0.0,4.0.0)"
+ org.eclipse.papyrus.sysml.diagram.internalblock;bundle-version="[3.0.0,4.0.0)",
+ org.eclipse.papyrus.sysml.architecture;bundle-version="1.0.0",
+ org.eclipse.papyrus.sysml.edit;bundle-version="1.2.0",
+ org.eclipse.papyrus.infra.gmfdiag.dnd,
+ org.eclipse.papyrus.uml.diagram.dnd,
+ org.eclipse.papyrus.uml.types.core,
+ org.eclipse.papyrus.infra.types.core,
+ org.eclipse.papyrus.sysml.architecture;bundle-version="1.0.0",
+ org.eclipse.papyrus.sysml.edit;bundle-version="1.2.0",
+ org.eclipse.papyrus.sysml.diagram.ui;bundle-version="2.0.0",
+ org.eclipse.papyrus.sysml.diagram.common,
+ org.eclipse.papyrus.sysml.modelexplorer;bundle-version="1.2.0",
+ org.eclipse.papyrus.sysml.properties;bundle-version="1.2.0",
+ org.eclipse.papyrus.sysml.tests;bundle-version="1.2.0"
 Export-Package: org.eclipse.papyrus.sysml.diagram.parametric.tests.suites
 Bundle-Vendor: %providerName
 Bundle-Version: 1.2.0.qualifier

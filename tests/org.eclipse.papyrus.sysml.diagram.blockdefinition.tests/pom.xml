@@ -9,4 +9,22 @@
   </parent>
   <artifactId>org.eclipse.papyrus.sysml.diagram.blockdefinition.tests</artifactId>
   <packaging>eclipse-test-plugin</packaging>
+  
+<!--  	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-surefire-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<failIfNoTests>false</failIfNoTests>
+					<useUIHarness>true</useUIHarness>
+					<useUIThread>true</useUIThread>
+					<argLine>-Xms512m -Xmx2048m</argLine>
+					<appArgLine>-testConfig=${testConfig}</appArgLine>					
+					<product>org.eclipse.sdk.ide</product>
+				</configuration>
+			</plugin>			
+		</plugins>
+	</build> --> 
 </project>

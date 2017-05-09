@@ -18,6 +18,7 @@ import junit.textui.TestRunner;
 import org.eclipse.papyrus.sysml.blocks.tests.BlockTest;
 import org.eclipse.papyrus.sysml.constraints.ConstraintBlock;
 import org.eclipse.papyrus.sysml.constraints.ConstraintsFactory;
+import org.junit.Ignore;
 
 /**
  * <!-- begin-user-doc --> A test case for the model object '<em><b>Constraint Block</b></em>'. <!--
@@ -25,6 +26,7 @@ import org.eclipse.papyrus.sysml.constraints.ConstraintsFactory;
  * 
  * @generated
  */
+@Ignore("no tests")
 public class ConstraintBlockTest extends BlockTest {
 
 	/**

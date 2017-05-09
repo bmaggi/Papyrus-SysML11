@@ -16,10 +16,9 @@ package org.eclipse.papyrus.sysml.nattable.requirement.tests.tests;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.transaction.TransactionalEditingDomain;
 import org.eclipse.papyrus.commands.OpenDiagramCommand;
-import org.eclipse.papyrus.infra.emf.gmf.command.GMFtoEMFCommandWrapper;
-import org.eclipse.papyrus.editor.integration.tests.tests.AbstractEditorIntegrationTest;
 import org.eclipse.papyrus.infra.core.resource.ModelSet;
 import org.eclipse.papyrus.infra.core.sashwindows.di.service.IPageManager;
+import org.eclipse.papyrus.infra.emf.gmf.command.GMFtoEMFCommandWrapper;
 import org.eclipse.papyrus.infra.gmfdiag.common.model.NotationUtils;
 import org.eclipse.papyrus.infra.nattable.common.editor.NatTableEditor;
 import org.eclipse.papyrus.infra.nattable.manager.table.INattableModelManager;
@@ -32,8 +31,9 @@ import org.junit.Test;
 import org.osgi.framework.Bundle;
 
 
-public class OpenTableTest extends AbstractEditorIntegrationTest {
+public class OpenTableTest extends org.eclipse.papyrus.junit.utils.tests.AbstractEditorTest  {
 
+	
 	/**
 	 * This test allows to be sure that we doesn't break existing table model
 	 * 

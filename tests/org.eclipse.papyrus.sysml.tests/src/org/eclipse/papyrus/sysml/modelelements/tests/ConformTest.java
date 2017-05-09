@@ -18,6 +18,7 @@ import junit.textui.TestRunner;
 
 import org.eclipse.papyrus.sysml.modelelements.Conform;
 import org.eclipse.papyrus.sysml.modelelements.ModelelementsFactory;
+import org.junit.Ignore;
 
 /**
  * <!-- begin-user-doc --> A test case for the model object '<em><b>Conform</b></em>'. <!--
@@ -25,6 +26,7 @@ import org.eclipse.papyrus.sysml.modelelements.ModelelementsFactory;
  * 
  * @generated
  */
+@Ignore("no tests")
 public class ConformTest extends TestCase {
 
 	/**

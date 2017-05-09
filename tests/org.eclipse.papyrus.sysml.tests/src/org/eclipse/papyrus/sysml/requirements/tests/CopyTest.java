@@ -18,6 +18,7 @@ import junit.textui.TestRunner;
 
 import org.eclipse.papyrus.sysml.requirements.Copy;
 import org.eclipse.papyrus.sysml.requirements.RequirementsFactory;
+import org.junit.Ignore;
 
 /**
  * <!-- begin-user-doc --> A test case for the model object '<em><b>Copy</b></em>'. <!--
@@ -25,6 +26,7 @@ import org.eclipse.papyrus.sysml.requirements.RequirementsFactory;
  * 
  * @generated
  */
+@Ignore("no tests")
 public class CopyTest extends TestCase {
 
 	/**

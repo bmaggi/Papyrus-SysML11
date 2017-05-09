@@ -13,7 +13,6 @@
 
 package org.eclipse.papyrus.sysml.nattable.requirement.tests.paste.overwrite;
 
-import org.eclipse.nebula.widgets.nattable.selection.command.SelectCellCommand;
 import org.eclipse.nebula.widgets.nattable.selection.command.SelectColumnCommand;
 import org.eclipse.papyrus.infra.nattable.manager.table.NattableModelManager;
 

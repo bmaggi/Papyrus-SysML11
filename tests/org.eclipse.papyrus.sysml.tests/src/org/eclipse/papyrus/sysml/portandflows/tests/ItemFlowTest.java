@@ -18,6 +18,7 @@ import junit.textui.TestRunner;
 
 import org.eclipse.papyrus.sysml.portandflows.ItemFlow;
 import org.eclipse.papyrus.sysml.portandflows.PortandflowsFactory;
+import org.junit.Ignore;
 
 /**
  * <!-- begin-user-doc --> A test case for the model object '<em><b>Item Flow</b></em>'. <!--
@@ -25,6 +26,7 @@ import org.eclipse.papyrus.sysml.portandflows.PortandflowsFactory;
  * 
  * @generated
  */
+@Ignore("no tests")
 public class ItemFlowTest extends TestCase {
 
 	/**

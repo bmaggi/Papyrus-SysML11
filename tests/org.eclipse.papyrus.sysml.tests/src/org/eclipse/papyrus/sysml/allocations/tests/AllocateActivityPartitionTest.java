@@ -18,12 +18,14 @@ import junit.textui.TestRunner;
 
 import org.eclipse.papyrus.sysml.allocations.AllocateActivityPartition;
 import org.eclipse.papyrus.sysml.allocations.AllocationsFactory;
+import org.junit.Ignore;
 
 /**
  * <!-- begin-user-doc --> A test case for the model object ' <em><b>Allocate Activity Partition</b></em>'. <!-- end-user-doc -->
  * 
  * @generated
  */
+@Ignore("no tests")
 public class AllocateActivityPartitionTest extends TestCase {
 
 	/**

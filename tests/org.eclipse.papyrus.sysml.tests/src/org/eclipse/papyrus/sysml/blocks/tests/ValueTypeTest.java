@@ -18,6 +18,7 @@ import junit.textui.TestRunner;
 
 import org.eclipse.papyrus.sysml.blocks.BlocksFactory;
 import org.eclipse.papyrus.sysml.blocks.ValueType;
+import org.junit.Ignore;
 
 /**
  * <!-- begin-user-doc --> A test case for the model object '<em><b>Value Type</b></em>'. <!--
@@ -25,6 +26,7 @@ import org.eclipse.papyrus.sysml.blocks.ValueType;
  * 
  * @generated
  */
+@Ignore("no tests")
 public class ValueTypeTest extends TestCase {
 
 	/**

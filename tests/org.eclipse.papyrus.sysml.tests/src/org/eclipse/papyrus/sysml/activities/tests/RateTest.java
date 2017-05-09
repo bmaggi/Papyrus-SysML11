@@ -18,6 +18,7 @@ import junit.textui.TestRunner;
 
 import org.eclipse.papyrus.sysml.activities.ActivitiesFactory;
 import org.eclipse.papyrus.sysml.activities.Rate;
+import org.junit.Ignore;
 
 /**
  * <!-- begin-user-doc --> A test case for the model object '<em><b>Rate</b></em>'. <!--
@@ -25,6 +26,7 @@ import org.eclipse.papyrus.sysml.activities.Rate;
  * 
  * @generated
  */
+@Ignore("no tests")
 public class RateTest extends TestCase {
 
 	/**

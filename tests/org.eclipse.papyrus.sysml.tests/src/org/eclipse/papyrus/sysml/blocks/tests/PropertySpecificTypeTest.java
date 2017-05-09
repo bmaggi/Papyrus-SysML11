@@ -18,12 +18,14 @@ import junit.textui.TestRunner;
 
 import org.eclipse.papyrus.sysml.blocks.BlocksFactory;
 import org.eclipse.papyrus.sysml.blocks.PropertySpecificType;
+import org.junit.Ignore;
 
 /**
  * <!-- begin-user-doc --> A test case for the model object '<em><b>Property Specific Type</b></em> '. <!-- end-user-doc -->
  * 
  * @generated
  */
+@Ignore("no tests")
 public class PropertySpecificTypeTest extends TestCase {
 
 	/**

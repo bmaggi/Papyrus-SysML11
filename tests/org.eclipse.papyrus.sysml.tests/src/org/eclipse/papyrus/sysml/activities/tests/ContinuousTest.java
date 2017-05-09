@@ -17,6 +17,7 @@ import junit.textui.TestRunner;
 
 import org.eclipse.papyrus.sysml.activities.ActivitiesFactory;
 import org.eclipse.papyrus.sysml.activities.Continuous;
+import org.junit.Ignore;
 
 /**
  * <!-- begin-user-doc --> A test case for the model object '<em><b>Continuous</b></em>'. <!--
@@ -24,6 +25,7 @@ import org.eclipse.papyrus.sysml.activities.Continuous;
  * 
  * @generated
  */
+@Ignore("no tests")
 public class ContinuousTest extends RateTest {
 
 	/**

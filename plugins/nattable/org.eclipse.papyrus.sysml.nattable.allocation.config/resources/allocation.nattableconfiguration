@@ -14,7 +14,7 @@
       <pasteElementContainementFeature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package/packagedElement"/>
       <postActions>applyStereotype:/SysML::Allocations::Allocate</postActions>
       <axisIdentifier xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_OgydQXmoEeWVZIGG1XbiFw">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.allocation.config/configs/allocation.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.0"/>
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.allocation.config/resources/allocation.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.0"/>
         <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
       </axisIdentifier>
     </ownedAxisConfigurations>

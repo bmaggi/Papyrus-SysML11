@@ -37,6 +37,7 @@
 		<eclipse.targetrelease>oxygen</eclipse.targetrelease>
 		<target.version>${project.version}</target.version>
 		<sonar.exclusions>**/src-gen/**</sonar.exclusions>
+  	<testConfig>CI_TESTS_CONFIG</testConfig> <!-- See org.eclipse.papyrus.junit.framework.classification.ClassificationConfig -->	
 	</properties>
 
 
@@ -108,12 +109,13 @@
 					<failIfNoTests>false</failIfNoTests>
 					<useUIHarness>true</useUIHarness>
 					<useUIThread>true</useUIThread>
-					<testFailureIgnore>true</testFailureIgnore>
-					<!-- ${tycho.testArgLine} is populated by JaCoCo and is required to enable code coverage 
+					<!--<testFailureIgnore>true</testFailureIgnore>
+					 ${tycho.testArgLine} is populated by JaCoCo and is required to enable code coverage 
 					<argLine>${tycho.testArgLine} ${test.argLine}</argLine>
-					<appArgLine>-testConfig=${testConfig}</appArgLine>-->
+					<appArgLine>-testConfig=${testConfig}</appArgLine>
+					<argLine>-Xms512m -Xmx2048m</argLine>
+					<appArgLine>-testConfig=${testConfig}</appArgLine>		-->			
 					<product>org.eclipse.sdk.ide</product>
-					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>			
 		</plugins>

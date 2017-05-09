@@ -18,6 +18,7 @@ import junit.textui.TestRunner;
 
 import org.eclipse.papyrus.sysml.blocks.BlocksFactory;
 import org.eclipse.papyrus.sysml.blocks.NestedConnectorEnd;
+import org.junit.Ignore;
 
 /**
  * <!-- begin-user-doc --> A test case for the model object '<em><b>Nested Connector End</b></em>'.
@@ -25,6 +26,7 @@ import org.eclipse.papyrus.sysml.blocks.NestedConnectorEnd;
  * 
  * @generated
  */
+@Ignore("no tests")
 public class NestedConnectorEndTest extends TestCase {
 
 	/**

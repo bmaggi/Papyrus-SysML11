@@ -16,18 +16,23 @@
  *****************************************************************************/
 package org.eclipse.papyrus.sysml.diagram.blockdefinition.tests;
 
+import java.util.Map;
+
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.core.runtime.Platform;
 import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.papyrus.infra.gmfdiag.common.preferences.PreferencesConstantsHelper;
+import org.eclipse.papyrus.infra.types.ElementTypeSetConfiguration;
+import org.eclipse.papyrus.infra.types.core.registries.ElementTypeSetConfigurationRegistry;
 import org.eclipse.papyrus.junit.framework.classification.tests.AbstractPapyrusTest;
 import org.eclipse.papyrus.junit.utils.rules.HouseKeeper;
 import org.eclipse.papyrus.sysml.diagram.blockdefinition.Activator;
 import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.intro.IIntroPart;
+import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.ClassRule;
 import org.osgi.framework.Bundle;
@@ -75,5 +80,12 @@ public abstract class AbstractTest extends AbstractPapyrusTest {
 		final String alwaysCreateLinkPreferenceName = PreferencesConstantsHelper.getPapyrusEditorConstant(PreferencesConstantsHelper.RESTORE_LINK_ELEMENT);
 		store.setValue(alwaysCreateLinkPreferenceName, true);
 		store.setDefault(alwaysCreateLinkPreferenceName, true);
+		
+		ElementTypeSetConfigurationRegistry instance = ElementTypeSetConfigurationRegistry.getInstance();
+		Map<String, Map<String, ElementTypeSetConfiguration>> elementTypeSetConfigurations = instance.getElementTypeSetConfigurations();
+		Map<String, ElementTypeSetConfiguration> map = elementTypeSetConfigurations.get("org.eclipse.papyrus.sysml.architecture.SysML");
+		ElementTypeSetConfiguration elementTypeSetConfiguration = map.get("org.eclipse.papyrus.sysml.service.types.elementTypeSetBlocks");
+		Assert.assertNotNull("The SysML element type set definition is missing", elementTypeSetConfiguration);
+
 	}
 }

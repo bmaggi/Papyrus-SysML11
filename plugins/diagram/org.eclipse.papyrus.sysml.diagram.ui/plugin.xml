@@ -7,7 +7,7 @@
          finalPerspective="org.eclipse.papyrus.infra.core.perspective"
          icon="icons/papyrus/new_sysml_project.gif"
          id="org.eclipse.papyrus.uml.diagram.wizards.createsysmlproject"
-         name="SysML Project"
+         name="%wizardSysMLProject"
          project="true">
       <description>
          New SysML Project
@@ -19,7 +19,7 @@
          finalPerspective="org.eclipse.papyrus.infra.core.perspective"
          icon="icons/papyrus/new_sysml_model.gif"
          id="org.eclipse.papyrus.uml.diagram.wizards.createsysmlmodel"
-         name="SysML Model">
+         name="%wizardSysMLModel">
       <selection
             class="org.eclipse.core.resources.IResource">
       </selection>

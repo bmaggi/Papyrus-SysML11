@@ -18,6 +18,7 @@ import junit.textui.TestRunner;
 
 import org.eclipse.papyrus.sysml.requirements.RequirementsFactory;
 import org.eclipse.papyrus.sysml.requirements.Satisfy;
+import org.junit.Ignore;
 
 /**
  * <!-- begin-user-doc --> A test case for the model object '<em><b>Satisfy</b></em>'. <!--
@@ -25,6 +26,7 @@ import org.eclipse.papyrus.sysml.requirements.Satisfy;
  * 
  * @generated
  */
+@Ignore("no tests")
 public class SatisfyTest extends TestCase {
 
 	/**

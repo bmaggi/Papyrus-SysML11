@@ -44,8 +44,8 @@ public class EditorUtils {
 
 		ServicesRegistry serviceRegistry = getEditor().getAdapter(ServicesRegistry.class);
 		try {
-			return (BlockDefinitionDiagramForMultiEditor) ServiceUtils.getInstance().getService(ISashWindowsContainer.class, serviceRegistry).getActiveEditor();
-
+			IEditorPart activeEditor = ServiceUtils.getInstance().getService(ISashWindowsContainer.class, serviceRegistry).getActiveEditor();
+			return (BlockDefinitionDiagramForMultiEditor) activeEditor;
 		} catch (ServiceException e) {
 			throw new Exception("Unable to retrieve service.", e);
 		} catch (ClassCastException e) {

@@ -18,6 +18,7 @@ import org.eclipse.papyrus.sysml.modelelements.ModelelementsFactory;
 import org.eclipse.papyrus.sysml.modelelements.Problem;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 
 /**
  * <!-- begin-user-doc --> A test case for the model object '<em><b>Problem</b></em>'. <!--
@@ -25,6 +26,7 @@ import org.junit.Before;
  *
  * @generated
  */
+@Ignore("no tests")
 public class ProblemTest extends AbstractPapyrusTest {
 
 	/**

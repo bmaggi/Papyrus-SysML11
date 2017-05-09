@@ -17,6 +17,7 @@ import org.eclipse.papyrus.junit.framework.classification.tests.AbstractPapyrusT
 import org.eclipse.papyrus.sysml.modelelements.ModelelementsFactory;
 import org.eclipse.papyrus.sysml.modelelements.Rationale;
 import org.junit.After;
+import org.junit.Ignore;
 
 /**
  * <!-- begin-user-doc --> A test case for the model object '<em><b>Rationale</b></em>'. <!--
@@ -24,6 +25,7 @@ import org.junit.After;
  *
  * @generated
  */
+@Ignore("no tests")
 public class RationaleTest extends AbstractPapyrusTest {
 
 	/**

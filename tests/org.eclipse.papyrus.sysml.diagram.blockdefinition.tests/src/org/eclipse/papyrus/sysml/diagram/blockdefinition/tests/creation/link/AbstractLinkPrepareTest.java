@@ -39,7 +39,7 @@ import org.junit.BeforeClass;
 /**
  * JUnit tests for Dependency creation test (via palette tools).
  */
-public class AbstractLinkPrepareTest extends AbstractTest {
+public abstract class AbstractLinkPrepareTest extends AbstractTest {
 
 	public static String toolID;
 
@@ -87,6 +87,11 @@ public class AbstractLinkPrepareTest extends AbstractTest {
 
 
 	public static final Map<View, Boolean> isCreationAllowed = new HashMap<View, Boolean>();
+//	{
+//		public Boolean put(View arg0, Boolean arg1) {
+//			return true;
+//		};
+//	};
 
 	@BeforeClass
 	public static void initializeCreationAllowedMap() {

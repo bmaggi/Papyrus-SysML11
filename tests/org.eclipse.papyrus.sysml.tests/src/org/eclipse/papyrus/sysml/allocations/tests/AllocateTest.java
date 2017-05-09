@@ -18,6 +18,7 @@ import junit.textui.TestRunner;
 
 import org.eclipse.papyrus.sysml.allocations.Allocate;
 import org.eclipse.papyrus.sysml.allocations.AllocationsFactory;
+import org.junit.Ignore;
 
 /**
  * <!-- begin-user-doc --> A test case for the model object '<em><b>Allocate</b></em>'. <!--
@@ -25,6 +26,7 @@ import org.eclipse.papyrus.sysml.allocations.AllocationsFactory;
  * 
  * @generated
  */
+@Ignore("no tests")
 public class AllocateTest extends TestCase {
 
 	/**

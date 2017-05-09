@@ -7,7 +7,27 @@ Require-Bundle: org.junit;bundle-version="4.10.0",
  org.eclipse.papyrus.infra.gmfdiag.common;bundle-version="[3.0.0,4.0.0)",
  org.eclipse.papyrus.uml.diagram.common;bundle-version="[3.0.0,4.0.0)",
  org.eclipse.papyrus.sysml.service.types;bundle-version="[2.0.0,3.0.0)",
- org.eclipse.papyrus.infra.core.sashwindows.di;bundle-version="[1.2.0,2.0.0)"
+ org.eclipse.papyrus.infra.core.sashwindows.di;bundle-version="[1.2.0,2.0.0)",
+ org.eclipse.papyrus.uml.diagram.clazz,
+ org.eclipse.papyrus.uml.diagram.menu;bundle-version="2.0.0",
+ org.eclipse.papyrus.uml.internationalization;bundle-version="1.0.0",
+ org.eclipse.papyrus.uml.diagram.stereotype.edition;bundle-version="2.0.0",
+ org.eclipse.papyrus.uml.nattable.stereotype.display;bundle-version="2.0.0",
+ org.eclipse.papyrus.infra.gmfdiag.dnd,
+ org.eclipse.papyrus.uml.diagram.dnd,
+ org.eclipse.papyrus.uml.types.core,
+ org.eclipse.papyrus.infra.types.core,
+ org.eclipse.papyrus.sysml.architecture;bundle-version="1.0.0",
+ org.eclipse.papyrus.sysml.edit;bundle-version="1.2.0",
+ org.eclipse.papyrus.sysml.diagram.ui;bundle-version="2.0.0",
+ org.eclipse.papyrus.sysml.diagram.common,
+ org.eclipse.papyrus.sysml.modelexplorer;bundle-version="1.2.0",
+ org.eclipse.papyrus.sysml.properties;bundle-version="1.2.0",
+ org.eclipse.papyrus.sysml.tests;bundle-version="1.2.0",
+ org.eclipse.papyrus.infra.gmfdiag.modelexplorer;bundle-version="1.2.0",
+ org.eclipse.papyrus.uml.diagram.modelexplorer;bundle-version="1.2.0",
+ org.eclipse.papyrus.uml.modelexplorer;bundle-version="2.0.0",
+ org.eclipse.papyrus.views.modelexplorer;bundle-version="3.0.0"
 Export-Package: org.eclipse.papyrus.sysml.diagram.blockdefinition.tests.suites
 Bundle-Vendor: %providerName
 Bundle-Version: 1.2.0.qualifier

@@ -43,21 +43,21 @@ public class SysMLStereotypePropertyCellManager extends StereotypePropertyCellMa
 	 * @param rowElement
 	 * @return
 	 */
-	@Override
-	public boolean handles(final Object columnElement, final Object rowElement) {
-		if (super.handles(columnElement, rowElement)) {
-			final List<Object> objects = organizeAndResolvedObjects(columnElement, rowElement, null);
-			if (objects.size() == 2) {
-				final EObject object = (EObject) objects.get(0);
-				if (object instanceof Port) {
-					String propertyQualifiedName = (String) objects.get(1);
-					propertyQualifiedName = propertyQualifiedName.substring(Constants.PROPERTY_OF_STEREOTYPE_PREFIX.length(), propertyQualifiedName.length());
-					return propertyQualifiedName.equals(org.eclipse.papyrus.sysml.nattable.utils.Constants.STEREOTYPE_FLOWPORT_DIRECTION);
-				}
-			}
-		}
-		return false;
-	}
+//	//@Override
+//	public boolean handles(final Object columnElement, final Object rowElement) {
+//		if (super.handles(columnElement, rowElement)) {
+//			final List<Object> objects = organizeAndResolvedObjects(columnElement, rowElement, null);
+//			if (objects.size() == 2) {
+//				final EObject object = (EObject) objects.get(0);
+//				if (object instanceof Port) {
+//					String propertyQualifiedName = (String) objects.get(1);
+//					propertyQualifiedName = propertyQualifiedName.substring(Constants.PROPERTY_OF_STEREOTYPE_PREFIX.length(), propertyQualifiedName.length());
+//					return propertyQualifiedName.equals(org.eclipse.papyrus.sysml.nattable.utils.Constants.STEREOTYPE_FLOWPORT_DIRECTION);
+//				}
+//			}
+//		}
+//		return false;
+//	}
 
 
 	/**
@@ -68,18 +68,18 @@ public class SysMLStereotypePropertyCellManager extends StereotypePropertyCellMa
 	 * @param rowElement
 	 * @return
 	 */
-	@Override
-	public boolean isCellEditable(final Object columnElement, final Object rowElement) {
-		boolean value = super.isCellEditable(columnElement, rowElement);
-		if (value) {
-			final List<Object> objects = organizeAndResolvedObjects(columnElement, rowElement, null);
-			if (objects.size() == 2) {
-				final EObject object = (EObject) objects.get(0);
-				if (matcher.matches(object)) {
-					value = false;
-				}
-			}
-		}
-		return value;
-	}
+//	@Override
+//	public boolean isCellEditable(final Object columnElement, final Object rowElement) {
+//		boolean value = super.isCellEditable(columnElement, rowElement);
+//		if (value) {
+//			final List<Object> objects = organizeAndResolvedObjects(columnElement, rowElement, null);
+//			if (objects.size() == 2) {
+//				final EObject object = (EObject) objects.get(0);
+//				if (matcher.matches(object)) {
+//					value = false;
+//				}
+//			}
+//		}
+//		return value;
+//	}
 }

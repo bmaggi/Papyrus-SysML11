@@ -18,6 +18,7 @@ import junit.textui.TestRunner;
 
 import org.eclipse.papyrus.sysml.activities.ActivitiesFactory;
 import org.eclipse.papyrus.sysml.activities.NoBuffer;
+import org.junit.Ignore;
 
 /**
  * <!-- begin-user-doc --> A test case for the model object '<em><b>No Buffer</b></em>'. <!--
@@ -25,6 +26,7 @@ import org.eclipse.papyrus.sysml.activities.NoBuffer;
  * 
  * @generated
  */
+@Ignore("no tests")
 public class NoBufferTest extends TestCase {
 
 	/**
