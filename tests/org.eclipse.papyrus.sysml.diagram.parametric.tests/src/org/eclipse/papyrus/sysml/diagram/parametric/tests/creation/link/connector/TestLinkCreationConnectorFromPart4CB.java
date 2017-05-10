@@ -22,10 +22,12 @@ import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.papyrus.sysml.diagram.parametric.tests.creation.link.AbstractLinkCreationFromElementTest4CB;
 import org.eclipse.uml2.uml.Property;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 
 /**
  * JUnit tests for Connector link creation test (via palette tools).
  */
+@Ignore
 public class TestLinkCreationConnectorFromPart4CB extends AbstractLinkCreationFromElementTest4CB {
 
 	@BeforeClass

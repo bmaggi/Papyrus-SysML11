@@ -22,7 +22,7 @@ import org.junit.Test;
 /**
  * JUnit tests for Link re-orient.
  */
-public class AbstractLinkReorientTargetTest extends AbstractLinkPrepareTest {
+public abstract class AbstractLinkReorientTargetTest extends AbstractLinkPrepareTest {
 
 	public static View relationshipView;
 

@@ -30,7 +30,7 @@ import org.junit.Test;
 /**
  * JUnit abstract tests for encapsulation modification effect on Connector test (via palette tools).
  */
-public class AbstractSetEncapsulationDeleteConnectorTest extends AbstractLinkPrepareTest {
+public abstract class AbstractSetEncapsulationDeleteConnectorTest extends AbstractLinkPrepareTest {
 
 	public static View sourceView;
 	

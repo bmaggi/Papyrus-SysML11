@@ -21,7 +21,7 @@ import org.junit.BeforeClass;
 /**
  * JUnit abstract tests for Connector re-orient.
  */
-public class AbstractLinkReorientSourceConnectorTest extends org.eclipse.papyrus.sysml.diagram.internalblock.tests.reorient.connector.AbstractLinkReorientSourceConnectorTest {
+public abstract class AbstractLinkReorientSourceConnectorTest extends org.eclipse.papyrus.sysml.diagram.internalblock.tests.reorient.connector.AbstractLinkReorientSourceConnectorTest {
 
 	@BeforeClass
 	public static void setPartBlockEncapsulated() throws Exception {

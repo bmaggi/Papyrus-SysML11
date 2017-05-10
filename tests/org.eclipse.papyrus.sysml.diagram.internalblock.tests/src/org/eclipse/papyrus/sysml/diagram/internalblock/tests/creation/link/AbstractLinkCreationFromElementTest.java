@@ -21,7 +21,7 @@ import org.junit.Test;
 /**
  * JUnit tests for Link creation with specified source element (via palette tools).
  */
-public class AbstractLinkCreationFromElementTest extends AbstractLinkPrepareTest {
+public abstract class AbstractLinkCreationFromElementTest extends AbstractLinkPrepareTest {
 
 	public static String toolID;
 	public static View sourceView;

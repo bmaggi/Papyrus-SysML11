@@ -33,7 +33,7 @@ import org.junit.BeforeClass;
 /**
  * JUnit tests for link creation test (via palette tools).
  */
-public class AbstractLinkPrepareTest4CB extends AbstractTest4CB {
+public abstract class AbstractLinkPrepareTest4CB extends AbstractTest4CB {
 
 	public static String toolID;
 	

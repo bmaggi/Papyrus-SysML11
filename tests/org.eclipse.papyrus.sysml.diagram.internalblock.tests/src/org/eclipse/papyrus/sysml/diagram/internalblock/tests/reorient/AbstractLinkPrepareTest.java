@@ -35,7 +35,7 @@ import org.junit.BeforeClass;
 /**
  * JUnit tests for link re-orient test.
  */
-public class AbstractLinkPrepareTest extends AbstractTest {
+public abstract class AbstractLinkPrepareTest extends AbstractTest {
 
 	// Custom nodes
 	public static View blockSourceView, blockTargetView;

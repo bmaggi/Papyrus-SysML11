@@ -28,7 +28,7 @@ import org.junit.Test;
 /**
  * JUnit abstract tests for Connector re-orient and delegation test.
  */
-public class AbstractLinkReorientSourceConnectorTest extends AbstractLinkPrepareTest {
+public abstract class AbstractLinkReorientSourceConnectorTest extends AbstractLinkPrepareTest {
 
 	public static View relationshipView;
 

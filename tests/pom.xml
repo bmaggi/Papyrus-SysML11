@@ -15,14 +15,17 @@
 
 	<modules>
 		<!-- Thanks abstraction for tests // TODO: to be removed-->
-		<module>org.eclipse.papyrus.uml.diagram.tests</module>
+		
 		<!--<module>org.eclipse.papyrus.uml.diagram.common.tests</module>
 		<module>org.eclipse.papyrus.uml.dynamic.profile.tests</module>
 		<module>org.eclipse.papyrus.editor.integration.tests</module>
 		<module>org.eclipse.papyrus.infra.gmfdiag.canonical.tests</module>-->
 		<!-- SysML 1.1 tests-->
-		<module>org.eclipse.papyrus.sysml.diagram.blockdefinition.tests</module>
-		<module>org.eclipse.papyrus.sysml.diagram.internalblock.tests</module>
+		
+		
+		<module>org.eclipse.papyrus.uml.diagram.tests</module>
+		<!--  <module>org.eclipse.papyrus.sysml.diagram.blockdefinition.tests</module>
+		<module>org.eclipse.papyrus.sysml.diagram.internalblock.tests</module>-->
 		<module>org.eclipse.papyrus.sysml.diagram.parametric.tests</module>
 		<module>org.eclipse.papyrus.sysml.diagram.requirement.tests</module>
 		<module>org.eclipse.papyrus.sysml.nattable.allocation.tests</module>
