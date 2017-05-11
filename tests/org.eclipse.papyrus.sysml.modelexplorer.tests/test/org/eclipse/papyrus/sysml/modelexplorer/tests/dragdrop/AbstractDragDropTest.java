@@ -46,7 +46,7 @@ import org.junit.Before;
 /**
  * Abstract Class to implement diagram drag and drop tests.
  */
-public class AbstractDragDropTest extends AbstractModelExplorerTest {
+public abstract class AbstractDragDropTest extends AbstractModelExplorerTest {
 
 	/**
 	 * prepare the copy
