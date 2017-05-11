@@ -26,7 +26,12 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.papyrus.sysml.diagram.ui;bundle-version="2.0.0",
  org.eclipse.papyrus.sysml.diagram.common,
  org.eclipse.papyrus.sysml.modelexplorer;bundle-version="1.2.0",
- org.eclipse.papyrus.sysml.properties;bundle-version="1.2.0"
+ org.eclipse.papyrus.sysml.properties;bundle-version="1.2.0",
+ org.eclipse.papyrus.sysml.diagram.blockdefinition;bundle-version="3.0.0",
+ org.eclipse.papyrus.sysml.diagram.css;bundle-version="1.2.0",
+ org.eclipse.papyrus.sysml.nattable;bundle-version="2.0.0",
+ org.eclipse.papyrus.sysml.service.types;bundle-version="2.0.0",
+ org.eclipse.papyrus.sysml.tests;bundle-version="1.2.0"
 Export-Package: org.eclipse.papyrus.sysml.diagram.requirement.test,
  org.eclipse.papyrus.sysml.diagram.requirement.test.canonical,
  org.eclipse.papyrus.sysml.diagram.requirement.test.load
