@@ -38,7 +38,13 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.papyrus.sysml.nattable;bundle-version="2.0.0",
  org.eclipse.papyrus.uml.nattable.generic;bundle-version="1.2.0",
  org.eclipse.papyrus.uml.nattable.menu;bundle-version="1.2.0",
- org.eclipse.papyrus.sysml.architecture;bundle-version="1.0.0"
+ org.eclipse.papyrus.sysml.architecture;bundle-version="1.0.0",
+ org.eclipse.papyrus.infra.gmfdiag.modelexplorer;bundle-version="1.2.0",
+ org.eclipse.papyrus.infra.nattable.modelexplorer;bundle-version="3.0.0",
+ org.eclipse.papyrus.sysml.modelexplorer;bundle-version="1.2.0",
+ org.eclipse.papyrus.uml.diagram.modelexplorer;bundle-version="1.2.0",
+ org.eclipse.papyrus.uml.modelexplorer;bundle-version="2.0.0",
+ org.eclipse.papyrus.views.modelexplorer.newchild;bundle-version="1.2.0"
 Export-Package: org.eclipse.papyrus.sysml.nattable.requirement.tests,
  org.eclipse.papyrus.sysml.nattable.requirement.tests.tests
 Bundle-Vendor: %providerName
