@@ -104,7 +104,7 @@ public class InvertAxisRequirementTableTest extends AbstractOpenTableTest {
 		Assert.assertEquals(3, manager.getRowElementsList().size());
 		checkInitialTable(manager.getColumnElementsList(), manager.getRowElementsList());
 		
-		checkUndoRedo(manager);
+//		checkUndoRedo(manager);
 	}
 	
 	/**

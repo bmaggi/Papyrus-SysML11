@@ -44,7 +44,12 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.papyrus.sysml.modelexplorer;bundle-version="1.2.0",
  org.eclipse.papyrus.uml.diagram.modelexplorer;bundle-version="1.2.0",
  org.eclipse.papyrus.uml.modelexplorer;bundle-version="2.0.0",
- org.eclipse.papyrus.views.modelexplorer.newchild;bundle-version="1.2.0"
+ org.eclipse.papyrus.views.modelexplorer.newchild;bundle-version="1.2.0",
+ org.eclipse.emf.transaction.ui;bundle-version="1.4.0",
+ org.eclipse.papyrus.sysml.diagram.common;bundle-version="2.0.0",
+ org.eclipse.papyrus.sysml.edit;bundle-version="1.2.0",
+ org.eclipse.papyrus.sysml.nattable.menu;bundle-version="1.2.0",
+ org.eclipse.papyrus.sysml.properties;bundle-version="1.2.0"
 Export-Package: org.eclipse.papyrus.sysml.nattable.requirement.tests,
  org.eclipse.papyrus.sysml.nattable.requirement.tests.tests
 Bundle-Vendor: %providerName
