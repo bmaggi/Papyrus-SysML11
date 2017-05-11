@@ -17,16 +17,17 @@
 
 		<!-- SysML 1.1 tests-->		
 		<module>org.eclipse.papyrus.uml.diagram.tests</module>
-
+		<module>org.eclipse.papyrus.sysml.diagram.parametric.tests</module>
+		<module>org.eclipse.papyrus.sysml.diagram.requirement.tests</module>
+		<module>org.eclipse.papyrus.sysml.diagram.blockdefinition.tests</module>
+		<module>org.eclipse.papyrus.sysml.diagram.internalblock.tests</module>
+		
 		<module>org.eclipse.papyrus.sysml.tests</module>
 		<module>org.eclipse.papyrus.sysml.service.types.tests</module>
 		<module>org.eclipse.papyrus.sysml.modelexplorer.tests</module>
 		<module>org.eclipse.papyrus.sysml.nattable.allocation.tests</module>
 		<module>org.eclipse.papyrus.sysml.nattable.requirement.tests</module>		
-		<module>org.eclipse.papyrus.sysml.diagram.parametric.tests</module>
-		<module>org.eclipse.papyrus.sysml.diagram.requirement.tests</module>
-		<module>org.eclipse.papyrus.sysml.diagram.blockdefinition.tests</module>
-		<module>org.eclipse.papyrus.sysml.diagram.internalblock.tests</module>
+
 
 	</modules>
 </project>
