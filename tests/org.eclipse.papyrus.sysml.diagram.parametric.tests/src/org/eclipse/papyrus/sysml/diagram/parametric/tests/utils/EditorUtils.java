@@ -76,13 +76,14 @@ public class EditorUtils {
 	public static EditPart getEditPart(View view) throws Exception {
 
 		// Test if the container is the diagram itself first
-		if (getDiagramEditPart().getModel() == view) {
-			return getDiagramEditPart();
+		DiagramEditPart diagramEditPart = getDiagramEditPart();
+		if (diagramEditPart.getModel() == view) {
+			return diagramEditPart;
 		}
 
 		// Test diagram children and look for the view
 		@SuppressWarnings("unchecked")
-		Iterator<EditPart> it = EditPartUtilities.getAllChildren(getDiagramEditPart()).iterator();
+		Iterator<EditPart> it = EditPartUtilities.getAllChildren(diagramEditPart).iterator();
 		while (it.hasNext()) {
 			EditPart editPart = it.next();
 			if (editPart.getModel() == view) {
@@ -92,7 +93,7 @@ public class EditorUtils {
 
 		// Test diagram nested connections and look for the view
 		@SuppressWarnings("unchecked")
-		Iterator<EditPart> itLinks = EditPartUtilities.getAllNestedConnectionEditParts(getDiagramEditPart()).iterator();
+		Iterator<EditPart> itLinks = EditPartUtilities.getAllNestedConnectionEditParts(diagramEditPart).iterator();
 		while (itLinks.hasNext()) {
 			EditPart editPart = itLinks.next();
 			if (editPart.getModel() == view) {
@@ -100,7 +101,7 @@ public class EditorUtils {
 			}
 		}
 
-		throw new Exception("Unable to find edit part for the given view.");
+		throw new Exception("Unable to find edit part for the given view.( type: "+view.getType()+") in diagramEditPart :"+ diagramEditPart.toString());
 	}
 
 	public static Tool getPaletteTool(String toolId) throws Exception {
