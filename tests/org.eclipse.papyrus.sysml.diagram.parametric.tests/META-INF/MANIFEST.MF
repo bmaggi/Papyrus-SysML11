@@ -52,7 +52,20 @@ Require-Bundle: org.eclipse.papyrus.infra.gmfdiag.commands;bundle-version="[3.0.
  org.eclipse.papyrus.infra.gmfdiag.outline;bundle-version="2.0.0",
  org.eclipse.papyrus.infra.gmfdiag.properties;bundle-version="3.0.0",
  org.eclipse.papyrus.infra.gmfdiag.welcome;bundle-version="1.2.0",
- org.eclipse.papyrus.sdk;bundle-version="2.0.0"
+ org.eclipse.papyrus.sdk;bundle-version="2.0.0",
+ org.eclipse.papyrus.bundles.tests;bundle-version="1.2.0",
+ org.eclipse.papyrus.emf.facet.custom.sdk.core;bundle-version="1.2.0",
+ org.eclipse.papyrus.emf.facet.custom.sdk.ui;bundle-version="1.2.0",
+ org.eclipse.papyrus.emf.facet.query.java;bundle-version="1.2.0",
+ org.eclipse.papyrus.emf.facet.util.emf.ui;bundle-version="2.0.0",
+ org.eclipse.papyrus.infra.discovery;bundle-version="1.2.0",
+ org.eclipse.papyrus.infra.discovery.ui;bundle-version="3.0.0",
+ org.eclipse.papyrus.infra.editor.welcome;bundle-version="2.0.0",
+ org.eclipse.papyrus.infra.editor.welcome.nattable;bundle-version="2.0.0",
+ org.eclipse.papyrus.infra.emf.expressions;bundle-version="1.0.0",
+ org.eclipse.papyrus.infra.emf.types;bundle-version="3.0.0",
+ org.eclipse.papyrus.infra.internationalization;bundle-version="1.0.0",
+ org.eclipse.papyrus.infra.newchild;bundle-version="3.0.0"
 Export-Package: org.eclipse.papyrus.sysml.diagram.parametric.tests.suites
 Bundle-Vendor: %providerName
 Bundle-Version: 1.2.0.qualifier
