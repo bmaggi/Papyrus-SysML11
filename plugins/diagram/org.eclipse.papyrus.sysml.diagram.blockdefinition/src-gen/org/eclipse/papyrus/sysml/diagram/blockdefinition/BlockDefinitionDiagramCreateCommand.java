@@ -29,7 +29,7 @@ public class BlockDefinitionDiagramCreateCommand extends AbstractPapyrusGmfCreat
 	 */
 	@Override
 	protected String getDefaultDiagramName() {
-		return "New Block Definition Diagram"; // //$NON-NLS-1$
+		return "New Block Definition Diagram"; //$NON-NLS-1$
 	}
 
 	/**

@@ -194,11 +194,11 @@ public class SharedTestSuiteState implements TestRule {
 			URI fileURI = URI.createPlatformResourceURI(file.getFullPath().toString(), true);
 			modelSet.createModels(fileURI);
 			
-			final String contextId;
-			if (fileURI.lastSegment().matches(".*\\.profile\\.(di|uml)"))
-				contextId = UMLArchitectureContextIds.Profile;
-			else
-				contextId = UMLArchitectureContextIds.UML;
+			final String contextId="org.eclipse.papyrus.sysml.architecture.SysML";
+//			if (fileURI.lastSegment().matches(".*\\.profile\\.(di|uml)"))
+//				contextId = UMLArchitectureContextIds.Profile;
+//			else
+//				contextId = UMLArchitectureContextIds.UML;
 			
 			final List<String> viewpointIds = new ArrayList<String>();
 			MergedArchitectureContext context = ArchitectureDomainManager.getInstance().getArchitectureContextById(contextId);
