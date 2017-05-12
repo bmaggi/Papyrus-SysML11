@@ -46,9 +46,6 @@ import org.eclipse.papyrus.infra.ui.editor.IMultiDiagramEditor;
 import org.eclipse.papyrus.junit.utils.JUnitUtils;
 import org.eclipse.papyrus.junit.utils.rules.HouseKeeper;
 import org.eclipse.papyrus.uml.architecture.UMLArchitectureContextIds;
-import org.eclipse.papyrus.uml.diagram.common.commands.CreateUMLModelCommand;
-import org.eclipse.papyrus.uml.diagram.profile.CreateProfileModelCommand;
-import org.eclipse.papyrus.uml.diagram.wizards.command.NewPapyrusModelCommand;
 import org.eclipse.papyrus.uml.tools.model.UmlModel;
 import org.eclipse.papyrus.uml.tools.utils.CustomUMLUtil;
 import org.eclipse.swt.widgets.Display;
@@ -282,6 +279,7 @@ public class SharedTestSuiteState implements TestRule {
 	protected DiagramEditPart getDiagramEditPart() {
 		if (diagramEditPart == null) {
 			IEditorPart diagramEditor = papyrusEditor.getActiveEditor();
+			
 			Assert.assertNotNull("Cannot find the diagram editor from papyrusEditor : "+papyrusEditor, diagramEditor); //$NON-NLS-1$
 			diagramEditPart = papyrusEditor.getAdapter(DiagramEditPart.class);
 			Assert.assertNotNull("Cannot find the Diagram edit part", diagramEditPart); //$NON-NLS-1$
