@@ -279,8 +279,7 @@ public class SharedTestSuiteState implements TestRule {
 	protected DiagramEditPart getDiagramEditPart() {
 		if (diagramEditPart == null) {
 			IEditorPart diagramEditor = papyrusEditor.getActiveEditor();
-			
-			Assert.assertNotNull("Cannot find the diagram editor from papyrusEditor : "+papyrusEditor, diagramEditor); //$NON-NLS-1$
+			Assert.assertNotNull("Cannot find the diagram editor from papyrusEditor : "+papyrusEditor+" title: "+papyrusEditor.getTitle(), diagramEditor); //$NON-NLS-1$
 			diagramEditPart = papyrusEditor.getAdapter(DiagramEditPart.class);
 			Assert.assertNotNull("Cannot find the Diagram edit part", diagramEditPart); //$NON-NLS-1$
 			StringValueStyle style = (StringValueStyle) diagramEditPart.getNotationView().getNamedStyle(NotationPackage.eINSTANCE.getStringValueStyle(), DiagramVersioningUtils.COMPATIBILITY_VERSION);
