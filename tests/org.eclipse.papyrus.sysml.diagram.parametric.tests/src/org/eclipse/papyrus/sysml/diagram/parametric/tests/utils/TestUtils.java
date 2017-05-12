@@ -387,11 +387,11 @@ public class TestUtils {
 						// Current behavior matches the expected results
 						return null;
 					} else {
-						fail("The command should be executable.");
+						fail("The command "+tgtCommand.getLabel()+" should be executable.");
 					}
 				} else { // Executable command
 					if(!isAllowed) {
-						fail("The command should not be executable.");
+						fail("The command "+tgtCommand.getLabel()+" should not be executable.");
 					} else {
 						// Current behavior matches the expected results
 						if(execute) { // Test command execution
