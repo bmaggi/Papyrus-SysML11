@@ -12,6 +12,7 @@
  /*****************************************************************************/
 package org.eclipse.papyrus.sysml.diagram.requirement.test.load;
 
+import org.junit.Ignore;
 import org.junit.runner.RunWith;
 import org.eclipse.papyrus.junit.framework.classification.ClassificationSuite;
 import org.junit.runners.Suite.SuiteClasses;
@@ -19,6 +20,7 @@ import org.junit.runners.Suite.SuiteClasses;
 /**
  * All tests together.
  */
+@Ignore // not executed by Papyrus-Master-Extra-Tests 
 @RunWith(ClassificationSuite.class)
 @SuiteClasses({
 // 10 classes

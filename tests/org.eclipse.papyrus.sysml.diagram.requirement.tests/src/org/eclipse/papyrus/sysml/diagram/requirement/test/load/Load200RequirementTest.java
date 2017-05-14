@@ -23,11 +23,13 @@ import org.eclipse.gmf.runtime.emf.type.core.IElementType;
 import org.eclipse.papyrus.sysml.diagram.requirement.provider.ElementTypes;
 import org.eclipse.papyrus.sysml.diagram.requirement.test.IRequirementDiagramTestsConstants;
 import org.eclipse.papyrus.sysml.diagram.requirement.test.canonical.AbstractPapyrusTestCase;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
  * The Class Load200RequirementTest.
  */
+@Ignore // not executed by Papyrus-Master-Extra-Tests 
 public class Load200RequirementTest extends AbstractPapyrusTestCase {
 
 	@Override
