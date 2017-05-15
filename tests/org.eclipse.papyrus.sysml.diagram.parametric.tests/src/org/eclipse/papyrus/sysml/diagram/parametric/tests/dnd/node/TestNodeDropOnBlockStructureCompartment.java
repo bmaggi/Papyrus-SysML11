@@ -26,6 +26,7 @@ import org.eclipse.papyrus.sysml.diagram.parametric.tests.AbstractTest4B;
 import org.eclipse.papyrus.sysml.service.types.element.SysMLElementTypes;
 import org.eclipse.uml2.uml.UMLPackage;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -55,12 +56,14 @@ public class TestNodeDropOnBlockStructureCompartment extends AbstractTest4B {
 		}
 	}
 
+	@Ignore
 	@Test
 	public void testDropBlock() throws Exception {
 		EObject droppedElement = createElement(SysMLElementTypes.BLOCK, containerPackage);
 		dropFromModelExplorer(droppedElement, containerView, true, false, 2); // 2 = Part / Reference
 	}
 
+	@Ignore
 	@Test
 	public void testDropConstraintBlock() throws Exception {
 		EObject droppedElement = createElement(SysMLElementTypes.CONSTRAINT_BLOCK, containerPackage);
