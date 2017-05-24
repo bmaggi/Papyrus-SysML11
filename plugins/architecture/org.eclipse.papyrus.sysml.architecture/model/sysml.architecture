@@ -15,6 +15,7 @@
       <representationKinds xsi:type="gmfdiagrepresentation:PapyrusDiagram" href="platform:/plugin/org.eclipse.papyrus.uml.architecture/model/uml.architecture#_yeY0sHDvEeWh-MssWmCB_A"/>
       <representationKinds xsi:type="gmfdiagrepresentation:PapyrusDiagram" href="#_m2D8IHDuEeWh-MssWmCB_A"/>
       <representationKinds xsi:type="nattablerepresentation:PapyrusTable" href="#_lTE0gHDwEeWh-MssWmCB_A"/>
+      <representationKinds xsi:type="nattablerepresentation:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.uml.architecture/model/uml.architecture#_d4-QwCT-EeedRqoTe_1ZiA"/>
     </viewpoints>
     <viewpoints xmi:id="_PAtvoMShEeaKZJ_pGfaSiA" name="Systems Design" description="A viewpoint allowing systems design with SysML" id="org.eclipse.papyrus.sysml.design">
       <representationKinds xsi:type="gmfdiagrepresentation:PapyrusDiagram" href="#_m2D8IHDuEeWh-MssWmCB_A"/>
@@ -33,7 +34,7 @@
       <representationKinds xsi:type="nattablerepresentation:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.uml.architecture/model/uml.architecture#_P3J1cEa7EeSVGbM3cmVSqQ"/>
       <representationKinds xsi:type="nattablerepresentation:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.uml.architecture/model/uml.architecture#_WC1q0P4UEhSRsNBVzfUrzA"/>
       <representationKinds xsi:type="nattablerepresentation:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.uml.architecture/model/uml.architecture#_wXztQHDwEwWh-MssWmCB_A"/>
-      <representationKinds xsi:type="gmfdiagrepresentation:PapyrusDiagram" href="#_iBC4gHDvEeWh-MssWmCB_A"/>
+      <representationKinds xsi:type="nattablerepresentation:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.uml.architecture/model/uml.architecture#_d4-QwCT-EeedRqoTe_1ZiA"/>
     </viewpoints>
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.infra.emf/model/infra-emf.elementtypesconfigurations#_rWI4YHPzEeSnGJwaJWHCSg"/>
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.infra.gmfdiag.common/model/gmfdiag-common.elementtypesconfigurations#_rWI4YHPzEeSnGJwaJWHCSg"/>
@@ -49,7 +50,6 @@
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.uml.diagram.communication/model/communicationdiagram-uml.elementtypesconfigurations#_rWI4YHPzEeSnGJwaJWHCSg"/>
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.uml.diagram.composite/model/compositediagram.elementtypesconfigurations#_tL86sLazEeSbnofizoRSMQ"/>
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.uml.diagram.interactionoverview/model/interactionOverviewDiagram.elementtypesconfigurations#_x8G0YGaNEeSyJIsxLao1Pw"/>
-    <elementTypes href="platform:/plugin/org.eclipse.papyrus.uml.diagram.sequence/model/sequencediagram-uml.elementtypesconfigurations#_BJMa0PyeEeWbo9Y7g2MLdw"/>
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.uml.diagram.statemachine/model/stateMachineDiagram.elementtypesconfigurations#_wYwtMMeDEeSwP_9Vn5UnWg"/>
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.uml.diagram.stereotype.edition/model/stereotype-edit.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.uml.diagram.timing/model/timingdiagram-uml.elementtypesconfigurations#_BJMa0PyeEeWbo9Y7g2MLdw"/>

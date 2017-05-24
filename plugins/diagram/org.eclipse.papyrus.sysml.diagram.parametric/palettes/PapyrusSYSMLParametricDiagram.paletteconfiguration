@@ -5,31 +5,31 @@
     <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="parametric.tool.constraintblockpropertycomposite" label="ConstraintProperty" description="Create a new ConstraintProperty">
       <icon pluginID="org.eclipse.papyrus.sysml" iconPath="/icons/blocks/Block.gif"/>
       <elementDescriptors>
-        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65DRHlYBEeS0WsAAtVmToA"/>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.ConstraintProperty"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="parametric.tool.parameter" label="ConstraintParameter" description="Create a new ConstraintParameter">
       <icon pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Port.gif"/>
       <elementDescriptors>
-        <elementType xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sc-1cFYCEeS0WsAAtVmToA"/>
+        <elementType xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="parametric.tool.blockpropertycomposite" label="Part" description="Create a new Part">
       <icon pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Property.gif"/>
       <elementDescriptors>
-        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65EfQVYBEeS0WsAAtVmToA"/>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.PartProperty"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="parametric.tool.reference" label="Reference" description="Create a new Reference">
       <icon pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Property.gif"/>
       <elementDescriptors>
-        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65FGRlYBEeS0WsAAtVmToA"/>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.ReferenceProperty"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="parametric.tool.value" label="Value" description="Create a new Value">
       <icon pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Property.gif"/>
       <elementDescriptors>
-        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65FtVFYBEeS0WsAAtVmToA"/>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.ValueProperty"/>
       </elementDescriptors>
     </ownedConfigurations>
   </drawerConfigurations>
@@ -38,7 +38,7 @@
     <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="parametric.tool.connector" label="BindingConnector" description="Create a new BindingConnector" kind="ConnectionTool">
       <icon pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Connector.gif"/>
       <elementDescriptors>
-        <elementType xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_SccC9VYCEeS0WsAAtVmToA"/>
+        <elementType xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Connector"/>
       </elementDescriptors>
     </ownedConfigurations>
   </drawerConfigurations>
@@ -47,31 +47,31 @@
     <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="parametric.tool.dependency" label="Dependency" description="Create a new Dependency" kind="ConnectionTool">
       <icon pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Dependency.gif"/>
       <elementDescriptors>
-        <elementType xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_SccqG1YCEeS0WsAAtVmToA"/>
+        <elementType xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="parametric.tool.comment" label="Comment" description="Create a new Comment">
       <icon pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16//Comment.gif"/>
       <elementDescriptors>
-        <elementType xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Scbb2FYCEeS0WsAAtVmToA"/>
+        <elementType xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Comment"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="parametric.tool.constraint" label="Constraint" description="Create a new Constraint">
       <icon pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Constraint.gif"/>
       <elementDescriptors>
-        <elementType xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_SccC-1YCEeS0WsAAtVmToA"/>
+        <elementType xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Constraint"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="parametric.tool.commentannotatedelement" label="CommentAnnotatedElement" description="Create a new CommentAnnotatedElement" kind="ConnectionTool">
       <icon pluginID="org.eclipse.papyrus.sysml.diagram.blockdefinition" iconPath="/icons/obj16/Link.gif"/>
       <elementDescriptors>
-        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#_eu4bt9x0EeWVxMf7SXAfhg"/>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Comment_AnnotatedElementEdge"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xsi:type="paletteconfiguration:ToolConfiguration" id="parametric.tool.context_link" label="ContextLink" description="Create a new ContextLink" kind="ConnectionTool">
       <icon pluginID="org.eclipse.papyrus.sysml.diagram.blockdefinition" iconPath="/icons/obj16/Link.gif"/>
       <elementDescriptors>
-        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#_eu4cBdx0EeWVxMf7SXAfhg"/>
+        <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Constraint_ContextEdge"/>
       </elementDescriptors>
     </ownedConfigurations>
   </drawerConfigurations>

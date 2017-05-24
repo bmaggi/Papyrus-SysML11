@@ -1,247 +1,248 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><elementtypesconfigurations:ElementTypeSetConfiguration xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" identifier="org.eclipse.papyrus.sysml.service.types.elementTypeSetSysML" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML" name="elementTypeSetSysML" xmi:id="_649xgFYBEeS0WsAAtVmToA" xmi:version="2.0">
-  <elementTypeConfigurations hint="SysML::ActorPartProperty" identifier="org.eclipse.papyrus.sysml.ActorPartProperty" name="SysML::ActorPartProperty" xmi:id="_64-_oFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Property.gif" xmi:id="_65ANwFYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ActorPartPropertyEditHelperAdvice" xmi:id="_65Bb4FYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ActorPartPropertyMatcher" xmi:id="_65CC8FYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sc-1cFYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::Allocate" identifier="org.eclipse.papyrus.sysml.Allocate" name="SysML::Allocate" xmi:id="_65CC8VYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.AllocateEditHelperAdvice" xmi:id="_65CC8lYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.AllocateMatcher" xmi:id="_65CC81YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_ScP1oVYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::Association" identifier="org.eclipse.papyrus.sysml.Association" name="SysML::Association" xmi:id="_65CC9FYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationEditHelperAdvice" xmi:id="_65CqAFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.AssociationMatcher" xmi:id="_65CqAVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_ScXxdFYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::AssociationComposite" identifier="org.eclipse.papyrus.sysml.AssociationComposite" name="SysML::AssociationComposite" xmi:id="_65CqAlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationCompositeEditHelperAdvice" xmi:id="_65CqA1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher" xmi:id="_65CqBFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65CC9FYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::AssociationCompositeDirected" identifier="org.eclipse.papyrus.sysml.AssociationCompositeDirected" name="SysML::AssociationCompositeDirected" xmi:id="_65CqBVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationCompositeDirectedEditHelperAdvice" xmi:id="_65CqBlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher" xmi:id="_65CqB1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65CC9FYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::AssociationNone" identifier="org.eclipse.papyrus.sysml.AssociationNone" name="SysML::AssociationNone" xmi:id="_65CqCFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationNoneEditHelperAdvice" xmi:id="_65CqCVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher" xmi:id="_65CqClYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65CC9FYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::AssociationNoneDirected" identifier="org.eclipse.papyrus.sysml.AssociationNoneDirected" name="SysML::AssociationNoneDirected" xmi:id="_65CqC1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationNoneDirectedEditHelperAdvice" xmi:id="_65CqDFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher" xmi:id="_65CqDVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65CC9FYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::AssociationShared" identifier="org.eclipse.papyrus.sysml.AssociationShared" name="SysML::AssociationShared" xmi:id="_65CqDlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationSharedEditHelperAdvice" xmi:id="_65CqD1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher" xmi:id="_65CqEFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65CC9FYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::AssociationSharedDirected" identifier="org.eclipse.papyrus.sysml.AssociationSharedDirected" name="SysML::AssociationSharedDirected" xmi:id="_65CqEVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationSharedDirectedEditHelperAdvice" xmi:id="_65DREFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher" xmi:id="_65DREVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65CC9FYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::Block" identifier="org.eclipse.papyrus.sysml.Block" name="SysML::Block" xmi:id="_65DRElYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/blocks/Block.gif" xmi:id="_65DRE1YBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.BlockEditHelperAdvice" xmi:id="_65DRFFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.BlockMatcher" xmi:id="_65DRFVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sca0wVYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::Conform" identifier="org.eclipse.papyrus.sysml.Conform" name="SysML::Conform" xmi:id="_65DRFlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/modelelements/Conform.gif" xmi:id="_65DRF1YBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ConformEditHelperAdvice" xmi:id="_65DRGFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ConformMatcher" xmi:id="_65DRGVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_SccqG1YCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::ConstraintBlock" identifier="org.eclipse.papyrus.sysml.ConstraintBlock" name="SysML::ConstraintBlock" xmi:id="_65DRGlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/constraints/ConstraintBlock.gif" xmi:id="_65DRG1YBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ConstraintBlockEditHelperAdvice" xmi:id="_65DRHFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ConstraintBlockMatcher" xmi:id="_65DRHVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sca0wVYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::ConstraintProperty" identifier="org.eclipse.papyrus.sysml.ConstraintProperty" name="SysML::ConstraintProperty" xmi:id="_65DRHlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/constraints/ConstraintProperty.gif" xmi:id="_65DRH1YBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ConstraintPropertyEditHelperAdvice" xmi:id="_65DRIFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ConstraintPropertyMatcher" xmi:id="_65DRIVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sc-1cFYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::Copy" identifier="org.eclipse.papyrus.sysml.Copy" name="SysML::Copy" xmi:id="_65DRIlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/requirements/Copy.gif" xmi:id="_65DRI1YBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.CopyEditHelperAdvice" xmi:id="_65DRJFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.CopyMatcher" xmi:id="_65DRJVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_ScP1oVYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::DeriveReqt" identifier="org.eclipse.papyrus.sysml.DeriveReqt" name="SysML::DeriveReqt" xmi:id="_65D4IFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/requirements/DeriveReqt.gif" xmi:id="_65D4IVYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.DeriveReqtEditHelperAdvice" xmi:id="_65D4IlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.DeriveReqtMatcher" xmi:id="_65D4I1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_ScP1oVYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::Dimension" identifier="org.eclipse.papyrus.sysml.Dimension" name="SysML::Dimension" xmi:id="_65D4JFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/blocks/Dimension.gif" xmi:id="_65D4JVYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.DimensionEditHelperAdvice" xmi:id="_65D4JlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.DimensionMatcher" xmi:id="_65D4J1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Scr6iVYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::FlowPort" identifier="org.eclipse.papyrus.sysml.FlowPort" name="SysML::FlowPort" xmi:id="_65D4KFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/portandflows/FlowPort.gif" xmi:id="_65D4KVYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.FlowPortEditHelperAdvice" xmi:id="_65D4KlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.FlowPortMatcher" xmi:id="_65D4K1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sc-ObFYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::FlowPort_InOut" identifier="org.eclipse.papyrus.sysml.FlowPort_InOut" name="SysML::FlowPort_InOut" xmi:id="_65D4LFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/portandflows/FlowPort.gif" xmi:id="_65D4LVYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.FlowPortInOutEditHelperAdvice" xmi:id="_65D4LlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.FlowPortInOutMatcher" xmi:id="_65D4L1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65D4KFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::FlowPort_In" identifier="org.eclipse.papyrus.sysml.FlowPort_In" name="SysML::FlowPort_In" xmi:id="_65D4MFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/portandflows/FlowPort.gif" xmi:id="_65D4MVYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.FlowPortInEditHelperAdvice" xmi:id="_65D4MlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.FlowPortInMatcher" xmi:id="_65D4M1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65D4KFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::FlowPort_Out" identifier="org.eclipse.papyrus.sysml.FlowPort_Out" name="SysML::FlowPort_Out" xmi:id="_65D4NFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/portandflows/FlowPort.gif" xmi:id="_65D4NVYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.FlowPortOutEditHelperAdvice" xmi:id="_65D4NlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.FlowPortOutMatcher" xmi:id="_65EfMFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65D4KFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::FlowPort_NA" identifier="org.eclipse.papyrus.sysml.FlowPort_NA" name="SysML::FlowPort_NA" xmi:id="_65EfMVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/portandflows/FlowPort_NA.gif" xmi:id="_65EfMlYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.FlowPortNAEditHelperAdvice" xmi:id="_65EfM1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.FlowPortNAMatcher" xmi:id="_65EfNFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65D4KFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::FlowProperty" identifier="org.eclipse.papyrus.sysml.FlowProperty" name="SysML::FlowProperty" xmi:id="_65EfNVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/portandflows/FlowProperty.gif" xmi:id="_65EfNlYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.FlowPropertyEditHelperAdvice" xmi:id="_65EfN1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.FlowPropertyMatcher" xmi:id="_65EfOFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sc-1cFYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::FlowSpecification" identifier="org.eclipse.papyrus.sysml.FlowSpecification" name="SysML::FlowSpecification" xmi:id="_65EfOVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/portandflows/FlowSpecification.gif" xmi:id="_65EfOlYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.FlowSpecificationEditHelperAdvice" xmi:id="_65EfO1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.FlowSpecificationMatcher" xmi:id="_65EfPFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_ScuW2VYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::ItemFlow" identifier="org.eclipse.papyrus.sysml.ItemFlow" name="SysML::ItemFlow" xmi:id="_65EfPVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/portandflows/ItemFlow.gif" xmi:id="_65EfPlYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ItemFlowEditHelperAdvice" xmi:id="_65EfP1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ItemFlowMatcher" xmi:id="_65EfQFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_ZLpUILgeEeSANYuUIb1qQA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::PartProperty" identifier="org.eclipse.papyrus.sysml.PartProperty" name="SysML::PartProperty" xmi:id="_65EfQVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Property.gif" xmi:id="_65EfQlYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.PartPropertyEditHelperAdvice" xmi:id="_65EfQ1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.PartPropertyMatcher" xmi:id="_65EfRFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sc-1cFYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::Problem" identifier="org.eclipse.papyrus.sysml.Problem" name="SysML::Problem" xmi:id="_65EfRVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/modelelements/Problem.gif" xmi:id="_65EfRlYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ProblemEditHelperAdvice" xmi:id="_65FGQFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ProblemMatcher" xmi:id="_65FGQVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Scbb2FYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::Rationale" identifier="org.eclipse.papyrus.sysml.Rationale" name="SysML::Rationale" xmi:id="_65FGQlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/modelelements/Rationale.gif" xmi:id="_65FGQ1YBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.RationaleEditHelperAdvice" xmi:id="_65FGRFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.RationaleMatcher" xmi:id="_65FGRVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Scbb2FYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::ReferenceProperty" identifier="org.eclipse.papyrus.sysml.ReferenceProperty" name="SysML::ReferenceProperty" xmi:id="_65FGRlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Property.gif" xmi:id="_65FGR1YBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ReferencePropertyEditHelperAdvice" xmi:id="_65FGSFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ReferencePropertyMatcher" xmi:id="_65FGSVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sc-1cFYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::Requirement" identifier="org.eclipse.papyrus.sysml.Requirement" name="SysML::Requirement" xmi:id="_65FGSlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/requirements/Requirement.gif" xmi:id="_65FGS1YBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.RequirementEditHelperAdvice" xmi:id="_65FGTFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.RequirementMatcher" xmi:id="_65FGTVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sca0wVYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::Satisfy" identifier="org.eclipse.papyrus.sysml.Satisfy" name="SysML::Satisfy" xmi:id="_65FGTlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/requirements/Satisfy.gif" xmi:id="_65FGT1YBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.SatisfyEditHelperAdvice" xmi:id="_65FGUFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.SatisfyMatcher" xmi:id="_65FGUVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_ScP1oVYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::Unit" identifier="org.eclipse.papyrus.sysml.Unit" name="SysML::Unit" xmi:id="_65FtUFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/blocks/Unit.gif" xmi:id="_65FtUVYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.UnitEditHelperAdvice" xmi:id="_65FtUlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.UnitMatcher" xmi:id="_65FtU1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Scr6iVYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::ValueProperty" identifier="org.eclipse.papyrus.sysml.ValueProperty" name="SysML::ValueProperty" xmi:id="_65FtVFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Property.gif" xmi:id="_65FtVVYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ValuePropertyEditHelperAdvice" xmi:id="_65FtVlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ValuePropertyMatcher" xmi:id="_65FtV1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sc-1cFYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::ValueType" identifier="org.eclipse.papyrus.sysml.ValueType" name="SysML::ValueType" xmi:id="_65FtWFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/blocks/ValueType.gif" xmi:id="_65FtWVYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ValueTypeEditHelperAdvice" xmi:id="_65FtWlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ValueTypeMatcher" xmi:id="_65FtW1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_SccqC1YCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::ValueType_Enumeration" identifier="org.eclipse.papyrus.sysml.ValueType_Enumeration" name="SysML::ValueType_Enumeration" xmi:id="_65FtXFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/blocks/ValueType.gif" xmi:id="_65FtXVYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ValueTypeEditHelperAdvice" xmi:id="_65FtXlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ValueTypeEnumerationMatcher" xmi:id="_65FtX1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_ScgUVlYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::ValueType_PrimitiveType" identifier="org.eclipse.papyrus.sysml.ValueType_PrimitiveType" name="SysML::ValueType_PrimitiveType" xmi:id="_65FtYFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/blocks/ValueType.gif" xmi:id="_65FtYVYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ValueTypeEditHelperAdvice" xmi:id="_65FtYlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ValueTypePrimitiveTypeMatcher" xmi:id="_65FtY1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sc-OdFYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::Verify" identifier="org.eclipse.papyrus.sysml.Verify" name="SysML::Verify" xmi:id="_65GUYFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/requirements/Verify.gif" xmi:id="_65GUYVYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.VerifyEditHelperAdvice" xmi:id="_65GUYlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.VerifyMatcher" xmi:id="_65GUY1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_ScP1oVYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::View" identifier="org.eclipse.papyrus.sysml.View" name="SysML::View" xmi:id="_65GUZFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/modelelements/View.gif" xmi:id="_65GUZVYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ViewEditHelperAdvice" xmi:id="_65GUZlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ViewMatcher" xmi:id="_65GUZ1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sc9nZVYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::ViewPoint" identifier="org.eclipse.papyrus.sysml.ViewPoint" name="SysML::ViewPoint" xmi:id="_65GUaFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.sysml" iconPath="/icons/modelelements/Viewpoint.gif" xmi:id="_65GUaVYBEeS0WsAAtVmToA"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ViewPointEditHelperAdvice" xmi:id="_65GUalYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ViewPointMatcher" xmi:id="_65GUa1YBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sca0wVYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <elementTypeConfigurations hint="SysML::ConstraintBlockParameter" identifier="org.eclipse.papyrus.sysml.ConstraintBlockParameter" name="SysML::ConstraintBlockParameter" xmi:id="_hoac0FYNEeSSidqjsigY_Q" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration">
-    <iconEntry bundleId="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Property.gif" xmi:id="_2MWa8FYNEeSSidqjsigY_Q"/>
-    
-    <editHelperAdviceConfiguration editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ConstraintParameterEditHelperAdvice" xmi:id="_pV9-YFYNEeSSidqjsigY_Q" xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration"/>
-    <matcherConfiguration matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher" xmi:id="_4QgrEFYNEeSSidqjsigY_Q" xsi:type="elementtypesconfigurations:MatcherConfiguration"/>
-  <specializedTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sc-1cFYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/></elementTypeConfigurations>
-  <adviceBindingsConfigurations editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ConstraintBlockPropertyEditHelperAdvice" identifier="org.eclipse.papyrus.sysml.advice.ConstraintBlockPropertyHelperAdvice" inheritance="all" xmi:id="_65IJkFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:AdviceBindingConfiguration">
-    <target href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sc-1cFYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmi:id="_649xgFYBEeS0WsAAtVmToA" identifier="org.eclipse.papyrus.sysml.service.types.elementTypeSetSysML" name="elementTypeSetSysML" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.ActorPartProperty" identifier="org.eclipse.papyrus.sysml.ActorPartProperty" name="SysML::ActorPartProperty" hint="SysML::ActorPartProperty">
+    <iconEntry xmi:id="_65ANwFYBEeS0WsAAtVmToA" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65Bb4FYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ActorPartPropertyEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65CC8FYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ActorPartPropertyMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.Allocate" identifier="org.eclipse.papyrus.sysml.Allocate" name="SysML::Allocate" hint="SysML::Allocate">
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65CC8lYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.AllocateEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65CC81YBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.AllocateMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Abstraction"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.Association" identifier="org.eclipse.papyrus.sysml.Association" name="SysML::Association" hint="SysML::Association">
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65CqAFYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65CqAVYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.AssociationMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.AssociationBase"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.AssociationComposite" identifier="org.eclipse.papyrus.sysml.AssociationComposite" name="SysML::AssociationComposite" hint="SysML::AssociationComposite">
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65CqA1YBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationCompositeEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65CqBFYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Association"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.AssociationCompositeDirected" identifier="org.eclipse.papyrus.sysml.AssociationCompositeDirected" name="SysML::AssociationCompositeDirected" hint="SysML::AssociationCompositeDirected">
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65CqBlYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationCompositeDirectedEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65CqB1YBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Association"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.AssociationNone" identifier="org.eclipse.papyrus.sysml.AssociationNone" name="SysML::AssociationNone" hint="SysML::AssociationNone">
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65CqCVYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationNoneEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65CqClYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Association"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.AssociationNoneDirected" identifier="org.eclipse.papyrus.sysml.AssociationNoneDirected" name="SysML::AssociationNoneDirected" hint="SysML::AssociationNoneDirected">
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65CqDFYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationNoneDirectedEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65CqDVYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Association"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.AssociationShared" identifier="org.eclipse.papyrus.sysml.AssociationShared" name="SysML::AssociationShared" hint="SysML::AssociationShared">
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65CqD1YBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationSharedEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65CqEFYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Association"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.AssociationSharedDirected" identifier="org.eclipse.papyrus.sysml.AssociationSharedDirected" name="SysML::AssociationSharedDirected" hint="SysML::AssociationSharedDirected">
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65DREFYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationSharedDirectedEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65DREVYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Association"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.Block" identifier="org.eclipse.papyrus.sysml.Block" name="SysML::Block" hint="SysML::Block">
+    <iconEntry xmi:id="_65DRE1YBEeS0WsAAtVmToA" iconPath="/icons/blocks/Block.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65DRFFYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.BlockEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65DRFVYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.BlockMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.Conform" identifier="org.eclipse.papyrus.sysml.Conform" name="SysML::Conform" hint="SysML::Conform">
+    <iconEntry xmi:id="_65DRF1YBEeS0WsAAtVmToA" iconPath="/icons/modelelements/Conform.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65DRGFYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ConformEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65DRGVYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ConformMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.ConstraintBlock" identifier="org.eclipse.papyrus.sysml.ConstraintBlock" name="SysML::ConstraintBlock" hint="SysML::ConstraintBlock">
+    <iconEntry xmi:id="_65DRG1YBEeS0WsAAtVmToA" iconPath="/icons/constraints/ConstraintBlock.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65DRHFYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ConstraintBlockEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65DRHVYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ConstraintBlockMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.ConstraintProperty" identifier="org.eclipse.papyrus.sysml.ConstraintProperty" name="SysML::ConstraintProperty" hint="SysML::ConstraintProperty">
+    <iconEntry xmi:id="_65DRH1YBEeS0WsAAtVmToA" iconPath="/icons/constraints/ConstraintProperty.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65DRIFYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ConstraintPropertyEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65DRIVYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ConstraintPropertyMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.Copy" identifier="org.eclipse.papyrus.sysml.Copy" name="SysML::Copy" hint="SysML::Copy">
+    <iconEntry xmi:id="_65DRI1YBEeS0WsAAtVmToA" iconPath="/icons/requirements/Copy.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65DRJFYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.CopyEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65DRJVYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.CopyMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Abstraction"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.DeriveReqt" identifier="org.eclipse.papyrus.sysml.DeriveReqt" name="SysML::DeriveReqt" hint="SysML::DeriveReqt">
+    <iconEntry xmi:id="_65D4IVYBEeS0WsAAtVmToA" iconPath="/icons/requirements/DeriveReqt.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65D4IlYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.DeriveReqtEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65D4I1YBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.DeriveReqtMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Abstraction"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.Dimension" identifier="org.eclipse.papyrus.sysml.Dimension" name="SysML::Dimension" hint="SysML::Dimension">
+    <iconEntry xmi:id="_65D4JVYBEeS0WsAAtVmToA" iconPath="/icons/blocks/Dimension.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65D4JlYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.DimensionEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65D4J1YBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.DimensionMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.InstanceSpecification"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.FlowPort" identifier="org.eclipse.papyrus.sysml.FlowPort" name="SysML::FlowPort" hint="SysML::FlowPort">
+    <iconEntry xmi:id="_65D4KVYBEeS0WsAAtVmToA" iconPath="/icons/portandflows/FlowPort.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65D4KlYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.FlowPortEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65D4K1YBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.FlowPortMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Port"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.FlowPort_InOut" identifier="org.eclipse.papyrus.sysml.FlowPort_InOut" name="SysML::FlowPort_InOut" hint="SysML::FlowPort_InOut">
+    <iconEntry xmi:id="_65D4LVYBEeS0WsAAtVmToA" iconPath="/icons/portandflows/FlowPort.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65D4LlYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.FlowPortInOutEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65D4L1YBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.FlowPortInOutMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.FlowPort"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.FlowPort_In" identifier="org.eclipse.papyrus.sysml.FlowPort_In" name="SysML::FlowPort_In" hint="SysML::FlowPort_In">
+    <iconEntry xmi:id="_65D4MVYBEeS0WsAAtVmToA" iconPath="/icons/portandflows/FlowPort.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65D4MlYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.FlowPortInEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65D4M1YBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.FlowPortInMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.FlowPort"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.FlowPort_Out" identifier="org.eclipse.papyrus.sysml.FlowPort_Out" name="SysML::FlowPort_Out" hint="SysML::FlowPort_Out">
+    <iconEntry xmi:id="_65D4NVYBEeS0WsAAtVmToA" iconPath="/icons/portandflows/FlowPort.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65D4NlYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.FlowPortOutEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65EfMFYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.FlowPortOutMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.FlowPort"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.FlowPort_NA" identifier="org.eclipse.papyrus.sysml.FlowPort_NA" name="SysML::FlowPort_NA" hint="SysML::FlowPort_NA">
+    <iconEntry xmi:id="_65EfMlYBEeS0WsAAtVmToA" iconPath="/icons/portandflows/FlowPort_NA.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65EfM1YBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.FlowPortNAEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65EfNFYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.FlowPortNAMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.FlowPort"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.FlowProperty" identifier="org.eclipse.papyrus.sysml.FlowProperty" name="SysML::FlowProperty" hint="SysML::FlowProperty">
+    <iconEntry xmi:id="_65EfNlYBEeS0WsAAtVmToA" iconPath="/icons/portandflows/FlowProperty.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65EfN1YBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.FlowPropertyEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65EfOFYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.FlowPropertyMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.FlowSpecification" identifier="org.eclipse.papyrus.sysml.FlowSpecification" name="SysML::FlowSpecification" hint="SysML::FlowSpecification">
+    <iconEntry xmi:id="_65EfOlYBEeS0WsAAtVmToA" iconPath="/icons/portandflows/FlowSpecification.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65EfO1YBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.FlowSpecificationEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65EfPFYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.FlowSpecificationMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Interface"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.ItemFlow" identifier="org.eclipse.papyrus.sysml.ItemFlow" name="SysML::ItemFlow" hint="SysML::ItemFlow">
+    <iconEntry xmi:id="_65EfPlYBEeS0WsAAtVmToA" iconPath="/icons/portandflows/ItemFlow.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65EfP1YBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ItemFlowEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65EfQFYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ItemFlowMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.InformationFlow"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.PartProperty" identifier="org.eclipse.papyrus.sysml.PartProperty" name="SysML::PartProperty" hint="SysML::PartProperty">
+    <iconEntry xmi:id="_65EfQlYBEeS0WsAAtVmToA" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65EfQ1YBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.PartPropertyEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65EfRFYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.PartPropertyMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.Problem" identifier="org.eclipse.papyrus.sysml.Problem" name="SysML::Problem" hint="SysML::Problem">
+    <iconEntry xmi:id="_65EfRlYBEeS0WsAAtVmToA" iconPath="/icons/modelelements/Problem.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65FGQFYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ProblemEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65FGQVYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ProblemMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Comment"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.Rationale" identifier="org.eclipse.papyrus.sysml.Rationale" name="SysML::Rationale" hint="SysML::Rationale">
+    <iconEntry xmi:id="_65FGQ1YBEeS0WsAAtVmToA" iconPath="/icons/modelelements/Rationale.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65FGRFYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.RationaleEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65FGRVYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.RationaleMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Comment"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.ReferenceProperty" identifier="org.eclipse.papyrus.sysml.ReferenceProperty" name="SysML::ReferenceProperty" hint="SysML::ReferenceProperty">
+    <iconEntry xmi:id="_65FGR1YBEeS0WsAAtVmToA" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65FGSFYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ReferencePropertyEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65FGSVYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ReferencePropertyMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.Requirement" identifier="org.eclipse.papyrus.sysml.Requirement" name="SysML::Requirement" hint="SysML::Requirement">
+    <iconEntry xmi:id="_65FGS1YBEeS0WsAAtVmToA" iconPath="/icons/requirements/Requirement.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65FGTFYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.RequirementEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65FGTVYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.RequirementMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.Satisfy" identifier="org.eclipse.papyrus.sysml.Satisfy" name="SysML::Satisfy" hint="SysML::Satisfy">
+    <iconEntry xmi:id="_65FGT1YBEeS0WsAAtVmToA" iconPath="/icons/requirements/Satisfy.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65FGUFYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.SatisfyEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65FGUVYBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.SatisfyMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Abstraction"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.Unit" identifier="org.eclipse.papyrus.sysml.Unit" name="SysML::Unit" hint="SysML::Unit">
+    <iconEntry xmi:id="_65FtUVYBEeS0WsAAtVmToA" iconPath="/icons/blocks/Unit.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65FtUlYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.UnitEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65FtU1YBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.UnitMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.InstanceSpecification"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.ValueProperty" identifier="org.eclipse.papyrus.sysml.ValueProperty" name="SysML::ValueProperty" hint="SysML::ValueProperty">
+    <iconEntry xmi:id="_65FtVVYBEeS0WsAAtVmToA" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65FtVlYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ValuePropertyEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65FtV1YBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ValuePropertyMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.ValueType" identifier="org.eclipse.papyrus.sysml.ValueType" name="SysML::ValueType" hint="SysML::ValueType">
+    <iconEntry xmi:id="_65FtWVYBEeS0WsAAtVmToA" iconPath="/icons/blocks/ValueType.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65FtWlYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ValueTypeEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65FtW1YBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ValueTypeMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.DataType"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.ValueType_Enumeration" identifier="org.eclipse.papyrus.sysml.ValueType_Enumeration" name="SysML::ValueType_Enumeration" hint="SysML::ValueType_Enumeration">
+    <iconEntry xmi:id="_65FtXVYBEeS0WsAAtVmToA" iconPath="/icons/blocks/ValueType.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65FtXlYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ValueTypeEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65FtX1YBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ValueTypeEnumerationMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Enumeration"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.ValueType_PrimitiveType" identifier="org.eclipse.papyrus.sysml.ValueType_PrimitiveType" name="SysML::ValueType_PrimitiveType" hint="SysML::ValueType_PrimitiveType">
+    <iconEntry xmi:id="_65FtYVYBEeS0WsAAtVmToA" iconPath="/icons/blocks/ValueType.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65FtYlYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ValueTypeEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65FtY1YBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ValueTypePrimitiveTypeMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.PrimitiveType"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.Verify" identifier="org.eclipse.papyrus.sysml.Verify" name="SysML::Verify" hint="SysML::Verify">
+    <iconEntry xmi:id="_65GUYVYBEeS0WsAAtVmToA" iconPath="/icons/requirements/Verify.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65GUYlYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.VerifyEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65GUY1YBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.VerifyMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Abstraction"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.View" identifier="org.eclipse.papyrus.sysml.View" name="SysML::View" hint="SysML::View">
+    <iconEntry xmi:id="_65GUZVYBEeS0WsAAtVmToA" iconPath="/icons/modelelements/View.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65GUZlYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ViewEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65GUZ1YBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ViewMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.ViewPoint" identifier="org.eclipse.papyrus.sysml.ViewPoint" name="SysML::ViewPoint" hint="SysML::ViewPoint">
+    <iconEntry xmi:id="_65GUaVYBEeS0WsAAtVmToA" iconPath="/icons/modelelements/Viewpoint.gif" bundleId="org.eclipse.papyrus.sysml"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_65GUalYBEeS0WsAAtVmToA" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ViewPointEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_65GUa1YBEeS0WsAAtVmToA" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.ViewPointMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml.ConstraintBlockParameter" identifier="org.eclipse.papyrus.sysml.ConstraintBlockParameter" name="SysML::ConstraintBlockParameter" hint="SysML::ConstraintBlockParameter">
+    <iconEntry xmi:id="_2MWa8FYNEeSSidqjsigY_Q" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <editHelperAdviceConfiguration xsi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_pV9-YFYNEeSSidqjsigY_Q" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ConstraintParameterEditHelperAdvice"/>
+    <matcherConfiguration xsi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_4QgrEFYNEeSSidqjsigY_Q" matcherClassName="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher"/>
+    <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <adviceBindingsConfigurations xsi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_65IJkFYBEeS0WsAAtVmToA" identifier="org.eclipse.papyrus.sysml.advice.ConstraintBlockPropertyHelperAdvice" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.ConstraintBlockPropertyEditHelperAdvice">
+    <target xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
   </adviceBindingsConfigurations>
-  <adviceBindingsConfigurations editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.ClassifierEditHelperAdvice" identifier="org.eclipse.papyrus.sysml.advice.Classifier" inheritance="all" xmi:id="_Kse4IFYDEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:AdviceBindingConfiguration">
-    <target href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sca0z1YCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  <adviceBindingsConfigurations xsi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_Kse4IFYDEeS0WsAAtVmToA" identifier="org.eclipse.papyrus.sysml.advice.Classifier" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.ClassifierEditHelperAdvice">
+    <target xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Classifier"/>
   </adviceBindingsConfigurations>
-  <adviceBindingsConfigurations editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.BlockConnectorEditHelperAdvice" identifier="org.eclipse.papyrus.sysml.advice.BlockConnector" inheritance="all" target="_65DRElYBEeS0WsAAtVmToA" xmi:id="_XFKsEFYDEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:AdviceBindingConfiguration"/>
-  <adviceBindingsConfigurations editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.ConnectorEditHelperAdvice" identifier="org.eclipse.papyrus.sysml.advice.Connector" inheritance="all" xmi:id="_iARuwFYDEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:AdviceBindingConfiguration">
-    <target href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_SccC9VYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  <adviceBindingsConfigurations xsi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_XFKsEFYDEeS0WsAAtVmToA" identifier="org.eclipse.papyrus.sysml.advice.BlockConnector" target="org.eclipse.papyrus.sysml.Block" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.BlockConnectorEditHelperAdvice"/>
+  <adviceBindingsConfigurations xsi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_iARuwFYDEeS0WsAAtVmToA" identifier="org.eclipse.papyrus.sysml.advice.Connector" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.ConnectorEditHelperAdvice">
+    <target xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Connector"/>
   </adviceBindingsConfigurations>
-  <adviceBindingsConfigurations editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.PropertyEditHelperAdvice" identifier="org.eclipse.papyrus.sysml.advice.Property" inheritance="all" xmi:id="_pCAFEFYDEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:AdviceBindingConfiguration">
-    <target href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sc-1cFYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  <adviceBindingsConfigurations xsi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_pCAFEFYDEeS0WsAAtVmToA" identifier="org.eclipse.papyrus.sysml.advice.Property" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.PropertyEditHelperAdvice">
+    <target xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
   </adviceBindingsConfigurations>
-  <adviceBindingsConfigurations editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.PackageEditHelperAdvice" identifier="org.eclipse.papyrus.sysml.advice.Package" inheritance="all" xmi:id="_vpsKwFYDEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:AdviceBindingConfiguration">
-    <target href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_Sc9nZVYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  <adviceBindingsConfigurations xsi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_vpsKwFYDEeS0WsAAtVmToA" identifier="org.eclipse.papyrus.sysml.advice.Package" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.PackageEditHelperAdvice">
+    <target xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
   </adviceBindingsConfigurations>
-  <adviceBindingsConfigurations editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.ActorEditHelperAdvice" identifier="org.eclipse.papyrus.sysml.advice.Actor" inheritance="all" xmi:id="_2t_7AFYDEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:AdviceBindingConfiguration">
-    <target href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_ScV8UVYCEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  <adviceBindingsConfigurations xsi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_2t_7AFYDEeS0WsAAtVmToA" identifier="org.eclipse.papyrus.sysml.advice.Actor" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml.service.types.helper.advice.ActorEditHelperAdvice">
+    <target xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Actor"/>
   </adviceBindingsConfigurations>
 </elementtypesconfigurations:ElementTypeSetConfiguration>

@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <ElementCreationMenuModel:Folder xmlns:ElementCreationMenuModel="http://www.eclipse.org/papyrus/infra/newchild/elementcreationmenumodel" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" label="New SysML Child" xmi:id="_R2sjUOJYEeOKT_prO3j7bg" xmi:version="2.0">
   <menu displayAllRoles="false" label="ActorPart" xmi:id="_ENmJAOJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_64-_oFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.ActorPartProperty" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="Allocate" xmi:id="_ENmJAeJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65CC8VYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Allocate" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="Block" xmi:id="_ENmJCeJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65DRElYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Block" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="Conform" xmi:id="_ENmJCuJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65DRFlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Conform" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="ConstraintBlock" xmi:id="_ENmJC-JbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65DRGlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.ConstraintBlock" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="ConstraintProperty" xmi:id="_ENmJDOJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65DRHlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.ConstraintProperty" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="Copy" xmi:id="_ENmJDeJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65DRIlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Copy" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="DeriveReqt" xmi:id="_ENmJDuJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65D4IFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.DeriveReqt" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="Dimension" xmi:id="_ENmJD-JbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65D4JFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Dimension" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="FlowPort" xmi:id="_ENmJEOJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65D4KFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.FlowPort" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="FlowPort In" xmi:id="_ENmJEeJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65D4MFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.FlowPort_In" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="FlowPort Out" xmi:id="_ENmJFOJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65D4NFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.FlowPort_Out" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="FlowPort InOut" xmi:id="_ENmJEuJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65D4LFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.FlowPort_InOut" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="FlowPort (non atomic)" xmi:id="_ENmJE-JbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65EfMVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.FlowPort_NA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="FlowProperty" xmi:id="_ENmJFeJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65EfNVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.FlowProperty" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="FlowSpecification" xmi:id="_ENmJFuJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65EfOVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.FlowSpecification" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="ItemFlow" xmi:id="_ENmJF-JbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65EfPVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.ItemFlow" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" icon="" label="Parameter" xmi:id="_0BGyoOJiEeOfp_s9yPC7Ww" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_hoac0FYNEeSSidqjsigY_Q" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.ConstraintBlockParameter" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="Part" xmi:id="_ENmJGOJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65EfQVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.PartProperty" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="Problem" xmi:id="_ENmJGeJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65EfRVYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Problem" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="Rationale" xmi:id="_ENmJGuJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65FGQlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Rationale" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="Reference" xmi:id="_ENmJG-JbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65FGRlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.ReferenceProperty" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="Requirement" xmi:id="_ENmJHOJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65FGSlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Requirement" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="Satisfy" xmi:id="_ENmJHeJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65FGTlYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Satisfy" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="Unit" xmi:id="_ENmJHuJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65FtUFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Unit" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="Value" xmi:id="_ENmJH-JbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65FtVFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.ValueProperty" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="ValueType" xmi:id="_ENmJIOJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65FtWFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.ValueType" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="Verify" xmi:id="_ENmJI-JbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65GUYFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.Verify" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="View" xmi:id="_ENmJJOJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65GUZFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.View" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
   <menu displayAllRoles="false" label="ViewPoint" xmi:id="_ENmJJeJbEeOKdcZwTkb3kA" xsi:type="ElementCreationMenuModel:CreationMenu">
-    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#_65GUaFYBEeS0WsAAtVmToA" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+    <elementType href="platform:/plugin/org.eclipse.papyrus.sysml.service.types/model/sysml.elementtypesconfigurations#org.eclipse.papyrus.sysml.ViewPoint" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
   </menu>
 </ElementCreationMenuModel:Folder>
